@@ -26,8 +26,13 @@ public abstract class CoreEvent extends Event {
         // force sync event calling as of 21/06/22
         Plugin corePlugin = Bukkit.getPluginManager().getPlugin("cSuite");
         if (corePlugin != null) {
-            Bukkit.getScheduler().runTask(corePlugin, () -> Bukkit.getServer().getPluginManager().callEvent(this));
+            if (Bukkit.isPrimaryThread()) {
+                Bukkit.getServer().getPluginManager().callEvent(this);
+            } else {
+                Bukkit.getScheduler().runTask(corePlugin, () -> Bukkit.getPluginManager().callEvent(this));
+            }
         }
         return this instanceof Cancellable && ((Cancellable) this).isCancelled();
     }
+
 }
