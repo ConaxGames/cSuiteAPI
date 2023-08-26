@@ -8,5 +8,7 @@ public enum TeleportType {
     HOME,
     TPA,
     TPAHERE,
-    BACK
+    BACK,
+
+    CLAN_HOME
 }
