@@ -20,6 +20,8 @@ import java.util.concurrent.CompletableFuture;
 
 public interface Connection {
 
+    void closeConnection();
+
     // collections
 
     MongoCollection<Document> getProfilesCollection();
