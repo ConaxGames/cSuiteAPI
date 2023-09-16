@@ -18,6 +18,8 @@ public interface IRankPluginProvider {
 
     RankWrapper getRank(UUID player);
 
+    double getRankWeight(Player player);
+
     void loadRanksAndPerms(Document document, ICorePlayer corePlayer);
 
     void updatePermissions(Player player, ICorePlayer corePlayer, String reason);
