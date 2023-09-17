@@ -7,7 +7,10 @@ import java.util.UUID;
 public interface IGuildMember {
 
     int getGuildId();
+
     UUID getUuid();
+
     String getName();
+
     GuildRank getRank();
 }
