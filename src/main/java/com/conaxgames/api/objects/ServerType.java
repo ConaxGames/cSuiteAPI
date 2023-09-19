@@ -1,8 +1,7 @@
 package com.conaxgames.api.objects;
 
-import com.conaxgames.api.interfaces.IServerType;
-
-public enum ServerType implements IServerType {
+// unused
+public enum ServerType {
 
     FFA("FFA", "ffa"),
     HUB("Hub", "Hub"),

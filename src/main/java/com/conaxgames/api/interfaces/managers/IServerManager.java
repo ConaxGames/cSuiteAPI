@@ -2,7 +2,6 @@ package com.conaxgames.api.interfaces.managers;
 
 import com.conaxgames.api.interfaces.INetwork;
 import com.conaxgames.api.interfaces.IScope;
-import com.conaxgames.api.interfaces.IServerType;
 import com.conaxgames.api.objects.MuteChatType;
 import com.conaxgames.api.objects.ServerData;
 
