@@ -6,6 +6,7 @@ import org.bson.Document;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
+import java.util.List;
 import java.util.UUID;
 
 public interface IRankPluginProvider {
@@ -17,6 +18,10 @@ public interface IRankPluginProvider {
     RankWrapper getRank(String player);
 
     RankWrapper getRank(UUID player);
+
+    IRank getEffectiveRank(UUID player);
+
+    List<IRank> getRanks();
 
     double getRankWeight(Player player);
 

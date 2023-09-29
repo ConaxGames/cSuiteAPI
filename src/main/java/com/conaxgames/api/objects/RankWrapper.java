@@ -4,6 +4,9 @@ import com.conaxgames.api.interfaces.IRank;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Collections;
+import java.util.List;
+
 @Getter
 @Setter
 public class RankWrapper {
