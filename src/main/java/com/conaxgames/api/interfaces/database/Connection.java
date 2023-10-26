@@ -9,6 +9,7 @@ import com.conaxgames.api.objects.OfflineWarn;
 import com.conaxgames.api.objects.Scope;
 import com.conaxgames.api.objects.StaffHistoryPunishment;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 
@@ -24,6 +25,7 @@ public interface Connection {
 
     // collections
 
+    MongoDatabase getDatabase();
     MongoCollection<Document> getProfilesCollection();
     MongoCollection<Document> getChatTagsCollection();
     MongoCollection<Document> getPunishmentsCollection();
