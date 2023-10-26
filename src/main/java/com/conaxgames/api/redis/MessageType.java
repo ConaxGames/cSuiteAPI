@@ -19,6 +19,7 @@ public enum MessageType {
     BROADCAST,
     SEND_MESSAGE,
     SEND_CLICKABLE,
+    BROADCAST_CLICKABLE,
     SOCIAL_SPY,
     KICK_PLAYER,
     KICK_PLAYER_NAME,

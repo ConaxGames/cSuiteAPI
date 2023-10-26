@@ -1,6 +1,7 @@
 package com.conaxgames.api;
 
 import co.aikar.commands.PaperCommandManager;
+import com.conaxgames.api.interfaces.ICoreDatabase;
 import com.conaxgames.api.interfaces.managers.*;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -20,7 +21,7 @@ public interface ICorePlugin {
 
     MongoCollection<Document> getGuildsCollection();
 
-    MongoDatabase getCoreDatabase();
+    ICoreDatabase getCoreDatabase();
 
     IPlayerManager getPlayerManager();
 
