@@ -159,7 +159,7 @@ public interface ICorePlayer {
 
     void setHomeLimit(int homes);
 
-    boolean setAFK(boolean value);
+    void setLastActivity(long value);
 
     boolean isAFK();
 }
