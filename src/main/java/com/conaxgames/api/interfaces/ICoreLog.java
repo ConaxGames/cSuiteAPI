@@ -1,8 +1,10 @@
 package com.conaxgames.api.interfaces;
 
+import com.conaxgames.api.objects.Pair;
 import org.bukkit.entity.Player;
 
 import java.util.List;
+import java.util.UUID;
 
 public interface ICoreLog {
 
@@ -15,6 +17,10 @@ public interface ICoreLog {
     void announcePermissionCreation(String admin, String receiver, String permission, String scope, String duration);
 
     void announcePermissionDeletion(String admin, String receiver, String permission, String scope);
+
+    void audit(UUID player, String key, List<Pair<String, String>> pairs);
+
+    //
 
     void sendInfo(String action, String message);
 

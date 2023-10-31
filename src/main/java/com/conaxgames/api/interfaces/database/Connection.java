@@ -4,10 +4,7 @@ import com.conaxgames.api.ICorePlayer;
 import com.conaxgames.api.interfaces.IPunishment;
 import com.conaxgames.api.interfaces.IScope;
 import com.conaxgames.api.interfaces.managers.IChatTagManager;
-import com.conaxgames.api.objects.Language;
-import com.conaxgames.api.objects.OfflineWarn;
-import com.conaxgames.api.objects.Scope;
-import com.conaxgames.api.objects.StaffHistoryPunishment;
+import com.conaxgames.api.objects.*;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
@@ -34,6 +31,7 @@ public interface Connection {
     MongoCollection<Document> getGuildMembersCollection();
     MongoCollection<Document> getGrantsCollection();
     MongoCollection<Document> getRanksCollection();
+    MongoCollection<Document> getAuditCollection();
     MongoCollection<Scope> getScopesCollection();
 
     // core
@@ -188,4 +186,9 @@ public interface Connection {
 
     CompletableFuture<List<IPunishment>> loadPunishments(UUID uuid);
     CompletableFuture<List<StaffHistoryPunishment>> loadStaffHistory(UUID uuid);
+
+    // audit
+
+    void audit(UUID uuid, String key, List<Pair<String, String>> fields);
+
 }

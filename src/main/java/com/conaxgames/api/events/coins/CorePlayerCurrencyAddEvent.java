@@ -6,17 +6,19 @@ import lombok.Getter;
 import org.bukkit.event.Cancellable;
 
 @Getter
-public class CorePlayerCoinsAddEvent extends CoreEvent implements Cancellable {
+public class CorePlayerCurrencyAddEvent extends CoreEvent implements Cancellable {
 
     private final ICorePlayer corePlayer;
+    private final String currency;
     private int amount;
     private double multiplier;
     private final String reason;
 
     private boolean cancelled;
 
-    public CorePlayerCoinsAddEvent(ICorePlayer corePlayer, int amount, double multiplier, String reason) {
+    public CorePlayerCurrencyAddEvent(ICorePlayer corePlayer, String currency, int amount, double multiplier, String reason) {
         this.corePlayer = corePlayer;
+        this.currency = currency;
         this.amount = amount;
         this.multiplier = multiplier;
         this.reason = reason;
