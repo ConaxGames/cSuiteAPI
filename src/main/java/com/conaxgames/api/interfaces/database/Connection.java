@@ -189,6 +189,6 @@ public interface Connection {
 
     // audit
 
-    void audit(UUID uuid, String key, List<Pair<String, String>> fields);
+    void audit(UUID uuid, String currentUsername, String key, List<Pair<String, String>> fields);
 
 }

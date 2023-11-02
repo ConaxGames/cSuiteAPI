@@ -1,5 +1,6 @@
 package com.conaxgames.api.interfaces;
 
+import com.conaxgames.api.ICorePlayer;
 import com.conaxgames.api.objects.Pair;
 import org.bukkit.entity.Player;
 
@@ -18,7 +19,7 @@ public interface ICoreLog {
 
     void announcePermissionDeletion(String admin, String receiver, String permission, String scope);
 
-    void audit(UUID player, String key, List<Pair<String, String>> pairs);
+    void audit(ICorePlayer corePlayer, String key, List<Pair<String, String>> pairs);
 
     //
 
