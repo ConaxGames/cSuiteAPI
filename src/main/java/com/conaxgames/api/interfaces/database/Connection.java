@@ -7,13 +7,13 @@ import com.conaxgames.api.interfaces.managers.IChatTagManager;
 import com.conaxgames.api.objects.*;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import jdk.tools.jlink.plugin.Plugin;
 import org.bson.Document;
 import org.bson.conversions.Bson;
+import org.bukkit.command.CommandSender;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.lang.reflect.Field;
+import java.util.*;
 import java.util.concurrent.CompletableFuture;
 
 public interface Connection {
@@ -32,6 +32,7 @@ public interface Connection {
     MongoCollection<Document> getGrantsCollection();
     MongoCollection<Document> getRanksCollection();
     MongoCollection<Document> getAuditCollection();
+    MongoCollection<Document> getNetworkCollection();
     MongoCollection<Scope> getScopesCollection();
 
     // core
@@ -189,6 +190,11 @@ public interface Connection {
 
     // audit
 
-    void audit(UUID uuid, String currentUsername, String key, List<Pair<String, String>> fields);
+    void audit(UUID uuid, String currentUsername, String key, List<Pair<String, Object>> fields);
 
+    // network config
+
+    CompletableFuture<Document> getNetworkConfigDocument();
+
+    CompletableFuture<Boolean> updateNetworkConfig(CommandSender sender, Field field, String newValue);
 }

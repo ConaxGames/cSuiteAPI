@@ -25,6 +25,7 @@ public enum MessageType {
     KICK_PLAYER_NAME,
     KICK_IP,
     EXECUTE_COMMAND,
+    RELOAD_NETWORK_CONFIG,
 
     // Scopes
     SCOPE_CREATE,

@@ -19,7 +19,7 @@ public interface ICoreLog {
 
     void announcePermissionDeletion(String admin, String receiver, String permission, String scope);
 
-    void audit(ICorePlayer corePlayer, String key, List<Pair<String, String>> pairs);
+    void audit(ICorePlayer corePlayer, String key, List<Pair<String, Object>> pairs);
 
     //
 
