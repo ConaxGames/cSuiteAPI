@@ -19,10 +19,6 @@ public interface ICorePlayer {
 
     IRank getEffectiveRank();
 
-    List<String> getOwnedPermissions();
-
-    HashMap<String, Map<String, Long>> getScopedPermissions();
-
     boolean isBlacklisted();
 
     IDeserialisedPunishment getBlacklistPunishment();
