@@ -5,7 +5,6 @@ import com.conaxgames.api.objects.Pair;
 import org.bukkit.entity.Player;
 
 import java.util.List;
-import java.util.UUID;
 
 public interface ICoreLog {
 
@@ -23,12 +22,12 @@ public interface ICoreLog {
 
     //
 
-    void sendInfo(String action, String message);
+    void sendInfo(String action, String message, Throwable... throwables);
 
-    void sendInfo(String action, List<String> message);
+    void sendInfo(String action, List<String> message, Throwable... throwables);
 
-    void sendDebug(String action, String message);
+    void sendDebug(String action, String message, Throwable... throwables);
 
-    void sendDebug(String action, List<String> message);
+    void sendDebug(String action, List<String> message, Throwable... throwables);
 
 }

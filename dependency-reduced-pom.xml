@@ -87,6 +87,12 @@
   </repositories>
   <dependencies>
     <dependency>
+      <groupId>com.conaxgames</groupId>
+      <artifactId>clibraries-plugin</artifactId>
+      <version>LATEST</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot</artifactId>
       <version>1.8.8-R0.1-SNAPSHOT</version>

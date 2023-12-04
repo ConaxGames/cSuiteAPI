@@ -3,6 +3,7 @@ package com.conaxgames.api;
 import co.aikar.commands.PaperCommandManager;
 import com.conaxgames.api.interfaces.ICoreDatabase;
 import com.conaxgames.api.interfaces.managers.*;
+import com.conaxgames.libraries.LibraryPlugin;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
@@ -16,6 +17,8 @@ import java.util.List;
 public interface ICorePlugin {
 
     JavaPlugin getPlugin();
+
+    LibraryPlugin getLibrary();
 
     MongoCollection<Document> getPlayersCollection();
 
@@ -47,13 +50,13 @@ public interface ICorePlugin {
 
     PaperCommandManager getPaperCommandManager();
 
-    void sendCritical(String action, String info);
+    void sendCritical(String action, String info, Throwable... throwables);
 
-    void sendInfo(String action, String info);
+    void sendInfo(String action, String info, Throwable... throwables);
 
-    void sendCritical(String action, List<String> info);
+    void sendCritical(String action, List<String> info, Throwable... throwables);
 
-    void sendInfo(String action, List<String> info);
+    void sendInfo(String action, List<String> info, Throwable... throwables);
 
     File getDataFolder();
 
