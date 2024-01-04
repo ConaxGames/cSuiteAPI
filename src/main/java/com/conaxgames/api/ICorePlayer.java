@@ -135,6 +135,8 @@ public interface ICorePlayer {
 
     int getBalance(String currency);
 
+    int getCurrency(String currency);
+
     void addCurrency(String currency, int amount, boolean multi, String reason, boolean message);
 
     void setCurrency(String currency, int amount, String reason, boolean message);
