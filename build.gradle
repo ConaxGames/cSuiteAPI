@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "com.conaxgames"
-version = "1.0-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     mavenLocal()
@@ -23,16 +23,10 @@ repositories {
 dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.30'
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
-
-    compileOnly(libs.org.mongodb.mongo.java.driver)
-    compileOnly(libs.com.github.cryptomorin.xseries)
-    compileOnly(libs.com.conaxgames.clibraries.plugin)
-    compileOnly(libs.org.spigotmc.spigot)
-    compileOnly(libs.org.projectlombok.lombok)
-    compileOnly(libs.co.aikar.acf.paper)
-}
-
-
-tasks.test {
-    useJUnitPlatform()
+    compileOnly 'co.aikar:acf-paper:0.5.1-SNAPSHOT'
+    compileOnly 'com.conaxgames:clibraries-plugin:0.9'
+    compileOnly 'com.github.cryptomorin:XSeries:8.6.1'
+    compileOnly 'org.mongodb:mongo-java-driver:3.8.2'
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    compileOnly 'org.spigotmc:spigot:1.8.8-R0.1-SNAPSHOT'
 }
