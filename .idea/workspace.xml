@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bccae3e8-f123-44a0-9a37-f9b02047b332" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$CoAikarAcfLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$CoAikarAcfVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$CoAikarLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$CoAikarVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$CoLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$CoVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$ComConaxgamesClibrariesLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$ComConaxgamesClibrariesVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$ComConaxgamesLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$ComConaxgamesVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$ComGithubCryptomorinLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$ComGithubCryptomorinVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$ComGithubLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$ComGithubVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$ComLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$ComVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$OrgLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$OrgMongodbLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$OrgMongodbMongoJavaLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$OrgMongodbMongoJavaVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$OrgMongodbMongoLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$OrgMongodbMongoVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$OrgMongodbVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$OrgProjectlombokLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$OrgProjectlombokVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$OrgSpigotmcLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$OrgSpigotmcVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$OrgVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$CoAikarAcfLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$CoAikarAcfVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$CoAikarLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$CoAikarVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$CoLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$CoVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ComConaxgamesClibrariesLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ComConaxgamesClibrariesVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ComConaxgamesLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ComConaxgamesVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ComGithubCryptomorinLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ComGithubCryptomorinVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ComGithubLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ComGithubVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ComLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$ComVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$OrgLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$OrgMongodbLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$OrgMongodbMongoJavaLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$OrgMongodbMongoJavaVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$OrgMongodbMongoLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$OrgMongodbMongoVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$OrgMongodbVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$OrgProjectlombokLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$OrgProjectlombokVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$OrgSpigotmcLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$OrgSpigotmcVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$OrgVersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/aa0baef281f61015158d18cd36047fba810ac397/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/conaxgames/api/interfaces/database/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/conaxgames/api/interfaces/database/Connection.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2U4C0qXjXcTp0ehb4d5Y11zS0jE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Gradle.cSuiteAPI [clean]">
+    <configuration name="cSuiteAPI [build]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="cSuiteAPI [clean]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="cSuiteAPI" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="cSuiteAPI" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.cSuiteAPI [build]" />
+      <item itemvalue="Gradle.cSuiteAPI [clean]" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bccae3e8-f123-44a0-9a37-f9b02047b332" name="Changes" comment="" />
+      <created>1692189247111</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692189247111</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
