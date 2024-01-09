@@ -36,7 +36,3 @@ build/
 
 ### Mac OS ###
 .DS_Store
-
-## Gradle ##
-.gradle
-.idea
