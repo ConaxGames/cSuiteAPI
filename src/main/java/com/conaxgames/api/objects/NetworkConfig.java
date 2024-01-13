@@ -45,6 +45,10 @@ public class NetworkConfig {
     public String commandBlockerBlockMessage = "&fUnknown command. Type /help for help.";
     public List<String> commandBlockerTerms = Arrays.asList("?", "bukkit:?", "bukkit:help", "/me", "/teammsg");
 
+    // Tab Blocker
+    public Boolean tabBlockerEnabled = true;
+    public List<String> tabBlockerTerms = Arrays.asList("?", "bukkit:?", "bukkit:help", "/ver", "/version", "/?", "/about", "/help");
+
     // Global Chat Filter
     public List<String> hardFilteredTerms = Arrays.asList("nigger", "niggerr", "niggerrr", "niggerrrr", "niggger", "nigggger", "niggggger", "nigga", "niggaa",
             "niggaaa", "niggaaaa", "niga", "nigaa", "nigaaa", "nigaaaa", "nigga", "niggga", "nigggga", "niggggga");
