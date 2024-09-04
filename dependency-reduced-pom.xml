@@ -88,6 +88,22 @@
   <dependencies>
     <dependency>
       <groupId>com.conaxgames</groupId>
+      <artifactId>clibraries-jedis</artifactId>
+      <version>LATEST</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>jedis</artifactId>
+          <groupId>redis.clients</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>gson</artifactId>
+          <groupId>com.google.code.gson</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.conaxgames</groupId>
       <artifactId>clibraries-plugin</artifactId>
       <version>LATEST</version>
       <scope>provided</scope>

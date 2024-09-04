@@ -1,10 +1,9 @@
 package com.conaxgames.api.redis;
 
-/**
- * Used for Redis messages.
- */
-public enum MessageType {
 
+import com.conaxgames.libraries.redis.message.MessageTypeInterface;
+
+public enum MessageType implements MessageTypeInterface {
     UNKNOWN,
 
     // Xenon
@@ -92,5 +91,5 @@ public enum MessageType {
     // Guilds Admin
     GUILD_ADMIN_TAG_COLOR_UNLOCK,
     GUILD_ADMIN_TAG_COLOR_LOCK,
-    GUILD_ADMIN_SET_MAX_MEMBERS,
+    GUILD_ADMIN_SET_MAX_MEMBERS;
 }
