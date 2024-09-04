@@ -15,6 +15,7 @@ public final class CorePluginAPI {
         plugin = corePlugin;
     }
 
+    @SuppressWarnings("unused")
     public static ICorePlugin getPlugin() {
         return plugin;
     }
