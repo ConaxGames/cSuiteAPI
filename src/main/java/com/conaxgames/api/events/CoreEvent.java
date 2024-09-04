@@ -12,6 +12,7 @@ import org.bukkit.plugin.Plugin;
 public abstract class CoreEvent extends Event {
 
     private static final HandlerList handlers = new HandlerList();
+    private static final Plugin corePlugin = Bukkit.getPluginManager().getPlugin("cSuite");
 
     public static HandlerList getHandlerList() {
         return handlers;
@@ -23,16 +24,21 @@ public abstract class CoreEvent extends Event {
     }
 
     public boolean call() {
-        // force sync event calling as of 21/06/22
-        Plugin corePlugin = Bukkit.getPluginManager().getPlugin("cSuite");
-        if (corePlugin != null) {
-            if (Bukkit.isPrimaryThread()) {
-                Bukkit.getServer().getPluginManager().callEvent(this);
-            } else {
-                Bukkit.getScheduler().runTask(corePlugin, () -> Bukkit.getPluginManager().callEvent(this));
-            }
+        // Check for plugin existence only once at class level
+        if (corePlugin == null) {
+            throw new IllegalStateException("Core plugin (cSuite) not found. Event cannot be called.");
         }
+
+        // force sync event calling as of 21/06/22
+        if (Bukkit.isPrimaryThread()) {
+            // Run synchronously if on the main thread
+            Bukkit.getServer().getPluginManager().callEvent(this);
+        } else {
+            // Run asynchronously if not on the main thread
+            Bukkit.getScheduler().runTask(corePlugin, () -> Bukkit.getPluginManager().callEvent(this));
+        }
+
+        // If the event is cancellable, return whether it was cancelled
         return this instanceof Cancellable && ((Cancellable) this).isCancelled();
     }
-
 }
