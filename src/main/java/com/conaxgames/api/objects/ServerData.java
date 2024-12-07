@@ -16,6 +16,5 @@ public class ServerData {
 	private boolean whitelisted;
 	private long startedAt;
 	public double tps;
-	private String serverType = "UNKNOWN";
 	private JsonObject extra;
 }
