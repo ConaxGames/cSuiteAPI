@@ -1,6 +1,6 @@
 package com.conaxgames.api.objects;
 
-import com.cryptomorin.xseries.XMaterial;
+import com.conaxgames.libraries.xseries.XMaterial;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
