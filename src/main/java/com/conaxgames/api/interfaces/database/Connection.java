@@ -57,6 +57,10 @@ public interface Connection {
 
     CompletableFuture<Boolean> removeGrant(UUID uuid, String grantId);
 
+    CompletableFuture<Boolean> setSocials(UUID uuid, Map<String, String> links);
+
+    CompletableFuture<Map<String, String>> getSocials(UUID uuid);
+
     CompletableFuture<Boolean> incrementFilterSpam(UUID uuid, Integer amount);
 
     CompletableFuture<Boolean> incrementFilterToxicity(UUID uuid, Integer amount);

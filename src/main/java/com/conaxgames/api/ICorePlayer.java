@@ -160,4 +160,8 @@ public interface ICorePlayer {
     void setLastActivity(long value);
 
     boolean isAFK();
+
+    Map<String, String> getSocials();
+
+    void setSocials(Map<String, String> socials);
 }
