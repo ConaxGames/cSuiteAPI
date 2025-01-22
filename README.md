@@ -61,33 +61,6 @@ Ensure the API is shaded into your plugin to prevent conflicts. Add the followin
 
 ---
 
-## Usage
-
-### Initialization
-Initialize the API within your plugin's `onEnable` method:
-
-```java
-@Override
-public void onEnable() {
-    CorePluginAPI coreAPI = new CorePluginAPI();
-    coreAPI.initialize(this);
-    // Additional setup
-}
-```
-
-### Shutdown
-Ensure a clean shutdown by calling the API's `onDisable` method in your plugin:
-
-```java
-@Override
-public void onDisable() {
-    CorePluginAPI.shutdown();
-    // Additional cleanup
-}
-```
-
----
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
