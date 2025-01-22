@@ -33,6 +33,8 @@ public interface Connection {
     MongoCollection<Document> getRanksCollection();
     MongoCollection<Document> getAuditCollection();
     MongoCollection<Document> getNetworkCollection();
+    MongoCollection<Document> getDisguiseRankCollection();
+    MongoCollection<Document> getDisguiseProfilesCollection();
     MongoCollection<Scope> getScopesCollection();
 
     // core
