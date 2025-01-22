@@ -88,16 +88,6 @@ public void onDisable() {
 
 ---
 
-## Contributing
-
-Contributions are welcome! If you'd like to contribute, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or fix.
-3. Submit a pull request for review.
-
----
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
