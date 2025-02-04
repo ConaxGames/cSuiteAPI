@@ -151,8 +151,6 @@ public interface ICorePlayer {
 
     Language getLanguage();
 
-    void setDisguiseRank(IRank rank);
-
     void addChatTag(IChatTag tag);
 
     void setHomeLimit(int homes);

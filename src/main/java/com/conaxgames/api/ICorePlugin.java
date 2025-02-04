@@ -22,6 +22,8 @@ public interface ICorePlugin {
 
     MongoCollection<Document> getPlayersCollection();
 
+    MongoCollection<Document> getDisguisedPlayersCollection();
+
     MongoCollection<Document> getGuildsCollection();
 
     ICoreDatabase getCoreDatabase();

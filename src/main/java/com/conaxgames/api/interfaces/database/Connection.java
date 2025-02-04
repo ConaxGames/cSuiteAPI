@@ -161,6 +161,12 @@ public interface Connection {
 
     CompletableFuture<Boolean> onLogout(UUID uuid, Long playTime, HashMap<String, Long> scopedPlaytime, Long lastLogout);
 
+    // disguise
+
+    CompletableFuture<Pair<Boolean, Long>> setDisguise(UUID uuid, String name, String skin, String rank);
+
+    CompletableFuture<Boolean> unsetDisguise(UUID uuid);
+
     // chat tags
 
     void loadChatTags(IChatTagManager tagManager);
