@@ -27,7 +27,7 @@ Add the following lines to your `pom.xml` inside of `dependencies` block:
 <dependency>
     <groupId>com.conaxgames</groupId>
     <artifactId>csuite-api</artifactId>
-    <version>dev</version>
+    <version>1.0.0</version>
     <scope>compile</scope>
 </dependency>
 ```
@@ -51,7 +51,7 @@ Ensure the API is shaded into your plugin to prevent conflicts, you should confi
 
 Add the following lines to your `build.gradle` inside of `dependencies` block:
 ```groovy
-compileOnly group: 'com.conaxgames', name: 'csuite-api', version: 'dev'
+compileOnly group: 'com.conaxgames', name: 'csuite-api', version: '1.0.0'
 ```
 
 Ensure the API is shaded into your plugin to prevent conflicts, you should configure the _[Shadow Plugin](https://plugins.gradle.org/plugin/com.github.johnrengelman.shadow)_ with relocation in your `build.gradle`:
