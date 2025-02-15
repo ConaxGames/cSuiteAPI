@@ -17,47 +17,49 @@ The cSuite API is a comprehensive framework designed to integrate seamlessly wit
 
 ## Getting Started
 
-To begin using the cSuite API in your project, follow these steps:
+To begin using the cSuite API in your project, select your preferred build automation tool from the dropdown (_Maven_ or _Gradle_) to view the setup instructions.
 
-### 1. Add Dependency
-Include the API in your `pom.xml` file to integrate it as a dependency:
+<details>
+    <summary>Maven</summary>
 
+Add the following lines to your `pom.xml` inside of `dependencies` block:
 ```xml
 <dependency>
     <groupId>com.conaxgames</groupId>
     <artifactId>csuite-api</artifactId>
-    <version>LATEST</version>
+    <version>dev</version>
     <scope>compile</scope>
 </dependency>
 ```
 
-### 2. Configure Maven Shade Plugin
-Ensure the API is shaded into your plugin to prevent conflicts. Add the following configuration to your Maven build file:
+Ensure the API is shaded into your plugin to prevent conflicts, you should configure the _[maven-shade-plugin](https://maven.apache.org/plugins/maven-shade-plugin/)_ with relocation in your `pom.xml`:
 
 ```xml
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-shade-plugin</artifactId>
-    <version>3.4.1</version>
-    <executions>
-        <execution>
-            <id>shade</id>
-            <phase>package</phase>
-            <goals>
-                <goal>shade</goal>
-            </goals>
-        </execution>
-    </executions>
-    <configuration>
-        <relocations>
-            <relocation>
-                <pattern>com.conaxgames</pattern>
-                <shadedPattern>com.conaxgames.{yourplugin}.csuite</shadedPattern>
-            </relocation>
-        </relocations>
-    </configuration>
-</plugin>
+<configuration>
+    <relocations>
+        <relocation>
+            <pattern>com.conaxgames</pattern>
+            <shadedPattern>com.conaxgames.{yourplugin}.csuite</shadedPattern>
+        </relocation>
+    </relocations>
+</configuration>
 ```
+</details>
+
+<details>
+    <summary>Gradle</summary>
+
+Add the following lines to your `build.gradle` inside of `dependencies` block:
+```groovy
+compileOnly group: 'com.conaxgames', name: 'csuite-api', version: 'dev'
+```
+
+Ensure the API is shaded into your plugin to prevent conflicts, you should configure the _[Shadow Plugin](https://plugins.gradle.org/plugin/com.github.johnrengelman.shadow)_ with relocation in your `build.gradle`:
+
+```groovy
+relocate 'com.conaxgames', 'com.conaxgames.{yourplugin}.csuite'
+```
+</details>
 
 ---
 
