@@ -33,8 +33,6 @@ public interface Connection {
     MongoCollection<Document> getRanksCollection();
     MongoCollection<Document> getAuditCollection();
     MongoCollection<Document> getNetworkCollection();
-    MongoCollection<Document> getDisguiseRankCollection();
-    MongoCollection<Document> getDisguiseProfilesCollection();
     MongoCollection<Scope> getScopesCollection();
 
     // core
@@ -160,12 +158,6 @@ public interface Connection {
     CompletableFuture<Boolean> onLogin(UUID uuid, String ipAddress, String lastAndCurrentServer, Long lastLogin);
 
     CompletableFuture<Boolean> onLogout(UUID uuid, Long playTime, HashMap<String, Long> scopedPlaytime, Long lastLogout);
-
-    // disguise
-
-    CompletableFuture<Pair<Boolean, Long>> setDisguise(UUID uuid, String name, String skin, String rank);
-
-    CompletableFuture<Boolean> unsetDisguise(UUID uuid);
 
     // chat tags
 
