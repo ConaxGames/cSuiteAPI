@@ -6,13 +6,6 @@ import com.conaxgames.libraries.redis.message.MessageTypeInterface;
 public enum MessageType implements MessageTypeInterface {
     UNKNOWN,
 
-    // Xenon
-    REQUEST_ADD,
-    REQUEST_REMOVE,
-    SUCCESS_ADD,
-    SUCCESS_REMOVE,
-    FORCE_REMOVE,
-
     // Essentials
     HEARTBEAT,
     BROADCAST,
