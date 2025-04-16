@@ -1,6 +1,7 @@
 package com.conaxgames;
 
 import com.conaxgames.api.ICorePlugin;
+import lombok.Getter;
 
 /**
  * The {@code CorePluginAPI} class provides static access to the core plugin instance
@@ -12,6 +13,7 @@ import com.conaxgames.api.ICorePlugin;
  * <p>It is designed to work as a singleton, where only one instance of the {@code CorePluginAPI}
  * can exist at any time.</p>
  */
+@Getter
 public final class CorePluginAPI {
 
     /**
