@@ -16,8 +16,6 @@ public interface IRank {
 
     List<String> getPermissions();
 
-    List<String> getBungeePermissions();
-
     List<String> getInherits();
 
 }
