@@ -48,4 +48,16 @@ public interface IGuild {
     String getTagStyled();
 
     IGuildTagColor getSelectedTagColor();
+    
+    /**
+     * Get the bank balance for this guild
+     * @return The current bank balance
+     */
+    double getBankBalance();
+    
+    /**
+     * Set the bank balance for this guild
+     * @param amount The new bank balance
+     */
+    void setBankBalance(double amount);
 }
