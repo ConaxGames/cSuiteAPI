@@ -24,6 +24,9 @@ public class NetworkConfig {
     public String networkTwitterLink = "https://www.twitter.com/conaxgames";
     public String networkStoreLink = "https://store.conaxgames.net/";
 
+    // Hub Server Identification
+    public List<String> hubServerIdentifiers = Arrays.asList("hub", "lobby");
+
     public String alreadyOwnChatTagCurrency = "coins";
     public Integer alreadyOwnChatTagReplacement = 250;
 
