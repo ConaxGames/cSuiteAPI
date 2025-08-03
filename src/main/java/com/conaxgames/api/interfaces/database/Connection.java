@@ -155,6 +155,8 @@ public interface Connection {
 
     CompletableFuture<Boolean> setOfflineRank(UUID uuid, String offlineRank);
 
+    CompletableFuture<Boolean> setFrozen(UUID uuid, Boolean frozen);
+
     CompletableFuture<Boolean> onLogin(UUID uuid, String ipAddress, String lastAndCurrentServer, Long lastLogin);
 
     CompletableFuture<Boolean> onLogout(UUID uuid, Long playTime, HashMap<String, Long> scopedPlaytime, Long lastLogout);
