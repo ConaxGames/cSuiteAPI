@@ -131,6 +131,8 @@ public interface Connection {
 
     CompletableFuture<Boolean> setStaffMessagesToggle(UUID uuid, Boolean value);
 
+    CompletableFuture<Boolean> setUsernamesToggle(UUID uuid, Boolean value);
+
     CompletableFuture<Boolean> setSoundsToggle(UUID uuid, Boolean value);
 
     CompletableFuture<Boolean> setAutoBroadcastsToggle(UUID uuid, Boolean value);
