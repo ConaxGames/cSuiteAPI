@@ -84,5 +84,10 @@ public enum MessageType implements MessageTypeInterface {
     // Guilds Admin
     GUILD_ADMIN_TAG_COLOR_UNLOCK,
     GUILD_ADMIN_TAG_COLOR_LOCK,
-    GUILD_ADMIN_SET_MAX_MEMBERS;
+    GUILD_ADMIN_SET_MAX_MEMBERS,
+
+    STAFF_STATUS_UPDATE,
+
+    // Maintenance
+    MAINTENANCE_STATE;
 }
