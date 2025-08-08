@@ -48,6 +48,10 @@ public enum MessageType implements MessageTypeInterface {
     BUNGEE_SEND_MESSAGE,
     BUNGEE_STAFF_SERVER_SWITCH,
 
+    // Velocity
+    VELOCITY_PLAYER_PERMISSIONS,
+    VELOCITY_SEND_MESSAGE,
+
     // Chat Tags
     TAG_CREATE,
     TAG_DELETE,
