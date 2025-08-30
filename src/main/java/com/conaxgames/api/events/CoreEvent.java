@@ -1,5 +1,6 @@
 package com.conaxgames.api.events;
 
+import com.conaxgames.CorePluginAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
@@ -29,13 +30,18 @@ public abstract class CoreEvent extends Event {
             throw new IllegalStateException("Core plugin (cSuite) not found. Event cannot be called.");
         }
 
+        // Check if CorePluginAPI is registered to access the scheduler
+        if (!CorePluginAPI.isRegistered()) {
+            throw new IllegalStateException("CorePluginAPI is not registered. Cannot access scheduler.");
+        }
+
         // force sync event calling as of 21/06/22
         if (Bukkit.isPrimaryThread()) {
             // Run synchronously if on the main thread
             Bukkit.getServer().getPluginManager().callEvent(this);
         } else {
-            // Run asynchronously if not on the main thread
-            Bukkit.getScheduler().runTask(corePlugin, () -> Bukkit.getPluginManager().callEvent(this));
+            // Run asynchronously if not on the main thread using cLibraries scheduler
+            CorePluginAPI.getScheduler().runTask(corePlugin, () -> Bukkit.getPluginManager().callEvent(this));
         }
 
         // If the event is cancellable, return whether it was cancelled

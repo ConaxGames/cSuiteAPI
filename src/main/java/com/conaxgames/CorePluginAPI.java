@@ -1,6 +1,7 @@
 package com.conaxgames;
 
 import com.conaxgames.api.ICorePlugin;
+import com.conaxgames.libraries.util.scheduler.Scheduler;
 import lombok.Getter;
 
 /**
@@ -63,5 +64,19 @@ public final class CorePluginAPI {
      */
     public static boolean isRegistered() {
         return instance != null;
+    }
+
+    /**
+     * Gets the unified scheduler that works across both Bukkit and Folia servers.
+     * This scheduler automatically detects the server type and uses the appropriate implementation.
+     *
+     * @return the unified {@code Scheduler} instance
+     * @throws IllegalStateException if the CorePluginAPI is not registered
+     */
+    public static Scheduler getScheduler() {
+        if (!isRegistered()) {
+            throw new IllegalStateException("CorePluginAPI is not registered. Cannot access scheduler.");
+        }
+        return plugin.getLibrary().getScheduler();
     }
 }

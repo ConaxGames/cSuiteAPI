@@ -57,7 +57,7 @@
         <dependency>
             <groupId>com.conaxgames</groupId>
             <artifactId>clibraries</artifactId>
-            <version>1.0.4</version>
+            <version>dev</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
