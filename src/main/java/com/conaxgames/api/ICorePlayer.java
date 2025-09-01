@@ -75,12 +75,6 @@ public interface ICorePlayer {
 
     boolean isPrivateMessageSounds();
 
-    boolean isAuthExempt();
-
-    boolean isAuthenticated();
-
-    boolean isSetupAuth();
-
     boolean isDataLoaded();
 
     boolean isVanished();
