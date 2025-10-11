@@ -29,8 +29,6 @@ public interface IPartyManager {
 
     void acceptInvite(UUID playerId);
 
-    void cleanupOfflinePlayers();
-
     Collection<IParty> getAllParties();
 
     int getTotalParties();
