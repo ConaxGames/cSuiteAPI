@@ -5,7 +5,6 @@ import com.conaxgames.api.interfaces.managers.*;
 import com.conaxgames.libraries.LibraryPlugin;
 import com.conaxgames.libraries.acf.PaperCommandManager;
 import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -47,6 +46,8 @@ public interface ICorePlugin {
     IPaperManager getPaperManager();
 
     ICommandRegistry getCommandRegistry();
+
+    IPartyManager getPartyManager();
 
     PaperCommandManager getPaperCommandManager();
 

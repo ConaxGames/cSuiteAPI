@@ -1,6 +1,7 @@
 package com.conaxgames;
 
 import com.conaxgames.api.ICorePlugin;
+import com.conaxgames.api.interfaces.managers.IPartyManager;
 import com.conaxgames.libraries.util.scheduler.Scheduler;
 import lombok.Getter;
 
@@ -78,5 +79,18 @@ public final class CorePluginAPI {
             throw new IllegalStateException("CorePluginAPI is not registered. Cannot access scheduler.");
         }
         return plugin.getLibrary().getScheduler();
+    }
+
+    /**
+     * Gets the party manager for managing parties and party-related operations.
+     *
+     * @return the {@code IPartyManager} instance
+     * @throws IllegalStateException if the CorePluginAPI is not registered
+     */
+    public static IPartyManager getPartyManager() {
+        if (!isRegistered()) {
+            throw new IllegalStateException("CorePluginAPI is not registered. Cannot access party manager.");
+        }
+        return plugin.getPartyManager();
     }
 }
