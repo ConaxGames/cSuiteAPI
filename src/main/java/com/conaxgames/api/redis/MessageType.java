@@ -93,5 +93,6 @@ public enum MessageType implements MessageTypeInterface {
     STAFF_STATUS_UPDATE,
 
     // Maintenance
-    MAINTENANCE_STATE;
+    MAINTENANCE_STATE,
+    MAINTENANCE_WHITELIST;
 }
