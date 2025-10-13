@@ -40,17 +40,12 @@ public enum MessageType implements MessageTypeInterface {
     RANK_EDIT_COLOR,
     RANK_EDIT_WEIGHT,
 
-    // Bungee
-    RANK_BUNGEE_PERMISSION_ADD,
-    RANK_BUNGEE_PERMISSION_REMOVE,
-    RANK_BUNGEE_PERMISSION_CLEAR,
-    BUNGEE_PLAYER_PERMISSIONS,
-    BUNGEE_SEND_MESSAGE,
-    BUNGEE_STAFF_SERVER_SWITCH,
+    // Bungee (removed - using Velocity instead)
 
     // Velocity
     VELOCITY_PLAYER_PERMISSIONS,
     VELOCITY_SEND_MESSAGE,
+    VELOCITY_STAFF_SERVER_SWITCH,
 
     // Chat Tags
     TAG_CREATE,
