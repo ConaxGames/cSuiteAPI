@@ -27,7 +27,6 @@ public interface IGuild {
 
     boolean toggleCombat();
 
-    int getKills();
 
     int getPoints();
 

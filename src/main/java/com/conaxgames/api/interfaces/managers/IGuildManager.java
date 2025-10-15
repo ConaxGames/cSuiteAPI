@@ -12,6 +12,5 @@ public interface IGuildManager {
 
     IGuild getGuildByGuildID(int id);
 
-    void updateGuildKillTotal(IGuild guild, int newAmount);
 
 }
