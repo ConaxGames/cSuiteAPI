@@ -28,9 +28,7 @@ public interface IGuild {
     boolean toggleCombat();
 
 
-    int getPoints();
 
-    int getWins();
 
     int getMaxMembers();
 
