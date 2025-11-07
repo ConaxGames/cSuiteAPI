@@ -33,9 +33,6 @@ public class NetworkConfig {
     public String alreadyOwnChatTagColorCurrency = "coins";
     public Integer alreadyOwnChatTagColorReplacement = 250;
 
-    // Friend
-    public Integer defaultFriendLimit = 50;
-
     // Guild
     public Integer guildDefaultMemberLimit = 50;
 
