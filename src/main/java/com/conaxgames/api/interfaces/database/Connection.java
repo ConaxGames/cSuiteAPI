@@ -117,6 +117,10 @@ public interface Connection {
 
     CompletableFuture<Boolean> unsetIPBan(UUID uuid);
 
+    CompletableFuture<Boolean> setJail(UUID uuid, String jail);
+
+    CompletableFuture<Boolean> unsetJail(UUID uuid);
+
     CompletableFuture<Boolean> setOfflineWarnings(UUID uuid, String mute);
 
     CompletableFuture<Boolean> unsetOfflineWarnings(UUID uuid);
