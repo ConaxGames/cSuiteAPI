@@ -37,7 +37,5 @@ public interface ICorePlugin {
 
     INMSManager getNMSManager();
 
-    IPaperManager getPaperManager();
-
     IPartyManager getPartyManager();
 }
