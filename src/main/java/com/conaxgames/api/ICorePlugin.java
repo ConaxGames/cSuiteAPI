@@ -3,15 +3,9 @@ package com.conaxgames.api;
 import com.conaxgames.api.interfaces.ICoreDatabase;
 import com.conaxgames.api.interfaces.managers.*;
 import com.conaxgames.libraries.LibraryPlugin;
-import com.conaxgames.libraries.acf.PaperCommandManager;
 import com.mongodb.client.MongoCollection;
 import org.bson.Document;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.io.File;
-import java.io.InputStream;
-import java.text.DateFormat;
-import java.util.List;
 
 public interface ICorePlugin {
 
@@ -45,25 +39,5 @@ public interface ICorePlugin {
 
     IPaperManager getPaperManager();
 
-    ICommandRegistry getCommandRegistry();
-
     IPartyManager getPartyManager();
-
-    PaperCommandManager getPaperCommandManager();
-
-    void sendCritical(String action, String info, Throwable... throwables);
-
-    void sendInfo(String action, String info, Throwable... throwables);
-
-    void sendCritical(String action, List<String> info, Throwable... throwables);
-
-    void sendInfo(String action, List<String> info, Throwable... throwables);
-
-    File getDataFolder();
-
-    InputStream getResource(String path);
-
-    DateFormat getDateFormat();
-
-    void saveResource(String path, boolean overwrite);
 }
