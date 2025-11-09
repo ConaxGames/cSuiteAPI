@@ -26,4 +26,8 @@ public interface ICoreLog {
 
     void sendInfo(String action, List<String> message, Throwable... throwables);
 
+    void sendDebug(String action, String message, Throwable... throwables);
+
+    void sendDebug(String action, List<String> message, Throwable... throwables);
+
 }

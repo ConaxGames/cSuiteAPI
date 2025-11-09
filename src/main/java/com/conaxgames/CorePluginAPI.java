@@ -9,6 +9,9 @@ import lombok.Getter;
  * The {@code CorePluginAPI} class provides static access to the core plugin instance
  * and utility methods for interacting with it.
  *
+ * <p>This class also includes methods to send debug information and check if the
+ * core plugin has been registered.</p>
+ *
  * <p>It is designed to work as a singleton, where only one instance of the {@code CorePluginAPI}
  * can exist at any time.</p>
  */
@@ -43,6 +46,16 @@ public final class CorePluginAPI {
     @SuppressWarnings("unused")
     public static ICorePlugin getPlugin() {
         return plugin;
+    }
+
+    /**
+     * Sends a debug message with the specified action and information.
+     *
+     * @param action the action being debugged.
+     * @param info additional information related to the action.
+     */
+    public static void sendDebug(String action, String info) {
+        plugin.sendCritical(action, info);
     }
 
     /**
