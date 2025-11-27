@@ -14,8 +14,6 @@ public enum PunishType {
     UNBAN("unban"),
     MUTE("mute"),
     UNMUTE("unmute"),
-    JAIL("jail"),
-    UNJAIL("unjail"),
     KICK("kick"),
     WARN("warn");
 
