@@ -80,7 +80,7 @@ public final class CorePluginAPI {
         }
         return plugin.getLibrary().getScheduler();
     }
-
+    // test
     /**
      * Gets the party manager for managing parties and party-related operations.
      *
