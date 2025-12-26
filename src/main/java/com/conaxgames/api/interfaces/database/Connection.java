@@ -145,6 +145,8 @@ public interface Connection {
 
     CompletableFuture<Boolean> setSocialSpyToggle(UUID uuid, Boolean value);
 
+    CompletableFuture<Boolean> setGlowToggle(UUID uuid, Boolean value);
+
     CompletableFuture<Boolean> setToggle(UUID uuid, String toggle, Boolean value);
 
     CompletableFuture<Boolean> setNickname(UUID uuid, String name);
