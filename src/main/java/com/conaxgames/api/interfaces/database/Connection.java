@@ -157,8 +157,6 @@ public interface Connection {
 
     CompletableFuture<Boolean> setWorldTime(UUID uuid, String time);
 
-    CompletableFuture<Boolean> setOfflineRank(UUID uuid, String offlineRank);
-
     CompletableFuture<Boolean> setFrozen(UUID uuid, Boolean frozen);
 
     CompletableFuture<Boolean> onLogin(UUID uuid, String ipAddress, String lastAndCurrentServer, Long lastLogin);
