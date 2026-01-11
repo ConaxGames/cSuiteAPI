@@ -81,6 +81,8 @@ public interface Connection {
 
     CompletableFuture<Boolean> setLanguage(UUID uuid, Language language);
 
+    CompletableFuture<Boolean> setScale(UUID uuid, float scale);
+
     CompletableFuture<Boolean> unsetNickname(UUID uuid);
 
     CompletableFuture<Boolean> unsetCustomTagColor(UUID uuid);

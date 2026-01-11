@@ -156,4 +156,8 @@ public interface ICorePlayer {
     Map<String, String> getSocials();
 
     void setSocials(Map<String, String> socials);
+
+    float getScale();
+
+    void setScale(float scale);
 }
