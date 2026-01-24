@@ -14,7 +14,7 @@ public interface IGuildManager {
 
     IGuild getGuildByGuildID(int id);
 
-    boolean canBypassGuildPvP(UUID player1, UUID player2);
+    boolean hasGuildPvPBypass(UUID player1, UUID player2);
 
     void setGuildPvPBypass(UUID player1, UUID player2, boolean bypass);
 
