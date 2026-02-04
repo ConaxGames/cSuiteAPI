@@ -77,7 +77,7 @@ public interface Connection {
 
     CompletableFuture<Boolean> addNetworkXP(UUID uuid, Integer amount);
 
-    CompletableFuture<Boolean> setScopedPermissions(UUID uuid, HashMap<String, Map<String, Long>> perms);
+    CompletableFuture<Boolean> setScopedPermissions(UUID uuid, Map<String, Map<String, Long>> perms);
 
     CompletableFuture<Boolean> setLanguage(UUID uuid, Language language);
 
