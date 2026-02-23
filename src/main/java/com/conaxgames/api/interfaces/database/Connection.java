@@ -165,6 +165,8 @@ public interface Connection {
 
     CompletableFuture<Boolean> onLogout(UUID uuid, Long playTime, HashMap<String, Long> scopedPlaytime, Long lastLogout);
 
+    CompletableFuture<Boolean> setLoginStreak(UUID uuid, int streak, long timestamp);
+
     // staff inventory
     CompletableFuture<Boolean> setStaffInventory(UUID uuid, String base64Inventory, String base64Armor);
     CompletableFuture<Boolean> unsetStaffInventory(UUID uuid);
