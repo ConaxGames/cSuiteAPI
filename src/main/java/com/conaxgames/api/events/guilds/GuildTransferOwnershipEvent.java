@@ -3,7 +3,7 @@ package com.conaxgames.api.events.guilds;
 import com.conaxgames.api.events.CoreEvent;
 import com.conaxgames.api.ICorePlayer;
 import com.conaxgames.api.interfaces.IGuild;
-import com.conaxgames.api.interfaces.managers.IGuildMember;
+import com.conaxgames.api.managers.IGuildMember;
 import lombok.Getter;
 import org.bukkit.event.Cancellable;
 

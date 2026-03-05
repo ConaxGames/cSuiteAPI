@@ -1,13 +1,12 @@
-package com.conaxgames.api.interfaces.database;
+package com.conaxgames.api.database;
 
 import com.conaxgames.api.ICorePlayer;
 import com.conaxgames.api.interfaces.IPunishment;
 import com.conaxgames.api.interfaces.IScope;
-import com.conaxgames.api.interfaces.managers.IChatTagManager;
+import com.conaxgames.api.managers.IChatTagManager;
 import com.conaxgames.api.objects.*;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import jdk.tools.jlink.plugin.Plugin;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 import org.bukkit.command.CommandSender;
@@ -19,8 +18,6 @@ import java.util.concurrent.CompletableFuture;
 public interface Connection {
 
     void closeConnection();
-
-    // collections
 
     MongoDatabase getDatabase();
     MongoCollection<Document> getProfilesCollection();
@@ -35,8 +32,6 @@ public interface Connection {
     MongoCollection<Document> getNetworkCollection();
     MongoCollection<Scope> getScopesCollection();
 
-    // core
-
     CompletableFuture<Boolean> profileAlreadyExists(UUID uuid);
 
     CompletableFuture<Boolean> profileAlreadyExists(String nameAnyCase);
@@ -50,8 +45,6 @@ public interface Connection {
     CompletableFuture<UUID> getUuid(String nameAnyCase);
 
     CompletableFuture<String> getName(UUID uuid);
-
-    // profile
 
     CompletableFuture<Boolean> addGrant(UUID uuid, String grantId, String json);
 
@@ -167,11 +160,8 @@ public interface Connection {
 
     CompletableFuture<Boolean> setLoginStreak(UUID uuid, int streak, long timestamp);
 
-    // staff inventory
     CompletableFuture<Boolean> setStaffInventory(UUID uuid, String base64Inventory, String base64Armor);
     CompletableFuture<Boolean> unsetStaffInventory(UUID uuid);
-
-    // chat tags
 
     void loadChatTags(IChatTagManager tagManager);
 
@@ -191,8 +181,6 @@ public interface Connection {
 
     CompletableFuture<Boolean> updateChatTag(Bson filter, Bson update);
 
-    // scope
-
     void createScope(Scope scope);
 
     CompletableFuture<Boolean> deleteScope(Bson filter);
@@ -201,16 +189,10 @@ public interface Connection {
 
     CompletableFuture<Boolean> scopeAlreadyExists(String id);
 
-    // punishments
-
     CompletableFuture<List<IPunishment>> loadPunishments(UUID uuid);
     CompletableFuture<List<StaffHistoryPunishment>> loadStaffHistory(UUID uuid);
 
-    // audit
-
     void audit(UUID uuid, String currentUsername, String key, List<Pair<String, Object>> fields);
-
-    // network config
 
     CompletableFuture<Document> getNetworkConfigDocument();
 

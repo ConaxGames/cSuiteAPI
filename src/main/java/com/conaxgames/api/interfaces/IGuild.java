@@ -1,6 +1,6 @@
 package com.conaxgames.api.interfaces;
 
-import com.conaxgames.api.interfaces.managers.IGuildMember;
+import com.conaxgames.api.managers.IGuildMember;
 
 import java.util.List;
 import java.util.UUID;

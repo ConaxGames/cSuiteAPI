@@ -1,7 +1,7 @@
 package com.conaxgames.api;
 
-import com.conaxgames.api.interfaces.ICoreDatabase;
-import com.conaxgames.api.interfaces.managers.*;
+import com.conaxgames.api.database.ICoreDatabase;
+import com.conaxgames.api.managers.*;
 import com.conaxgames.libraries.LibraryPlugin;
 import com.conaxgames.libraries.acf.PaperCommandManager;
 import com.mongodb.client.MongoCollection;

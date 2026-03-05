@@ -1,4 +1,4 @@
-package com.conaxgames.api.interfaces.managers;
+package com.conaxgames.api.managers;
 
 public interface ITeleportManager {
 

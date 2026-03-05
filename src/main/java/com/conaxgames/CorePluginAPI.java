@@ -1,7 +1,7 @@
 package com.conaxgames;
 
 import com.conaxgames.api.ICorePlugin;
-import com.conaxgames.api.interfaces.managers.IPartyManager;
+import com.conaxgames.api.managers.IPartyManager;
 import com.conaxgames.libraries.util.scheduler.Scheduler;
 import lombok.Getter;
 

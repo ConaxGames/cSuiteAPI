@@ -1,7 +1,7 @@
 package com.conaxgames.api;
 
 import com.conaxgames.api.interfaces.*;
-import com.conaxgames.api.interfaces.managers.IGuildMember;
+import com.conaxgames.api.managers.IGuildMember;
 import com.conaxgames.api.objects.ChatType;
 import com.conaxgames.api.objects.Language;
 import org.bukkit.entity.Player;
