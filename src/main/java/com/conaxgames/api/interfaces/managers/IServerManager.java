@@ -2,12 +2,15 @@ package com.conaxgames.api.interfaces.managers;
 
 import com.conaxgames.api.interfaces.IScope;
 import com.conaxgames.api.objects.MuteChatType;
+import com.conaxgames.api.objects.NetworkConfig;
 import com.conaxgames.api.objects.ServerData;
 
 import java.util.List;
 import java.util.Map;
 
 public interface IServerManager {
+
+    NetworkConfig getNetwork();
 
     String getServerName();
 
