@@ -46,6 +46,7 @@ public enum MessageType implements MessageTypeInterface {
     VELOCITY_PLAYER_PERMISSIONS,
     VELOCITY_SEND_MESSAGE,
     VELOCITY_STAFF_SERVER_SWITCH,
+    VELOCITY_FRIEND_SERVER_SWITCH,
 
     // Chat Tags
     TAG_CREATE,
