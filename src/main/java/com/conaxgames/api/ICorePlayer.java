@@ -125,6 +125,8 @@ public interface ICorePlayer {
 
     List<? extends IRank> getRanks();
 
+    void setRanks(List<? extends IRank> ranks);
+
     int getCoins();
 
     int getBalance(String currency);
