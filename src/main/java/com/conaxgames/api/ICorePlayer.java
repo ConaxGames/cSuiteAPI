@@ -5,7 +5,6 @@ import com.conaxgames.api.managers.IGuildMember;
 import com.conaxgames.api.objects.ChatType;
 import com.conaxgames.api.objects.Language;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 
 import java.util.*;
 
@@ -92,10 +91,6 @@ public interface ICorePlayer {
     boolean isAutoBroadcastSounds();
 
     boolean isOnline();
-
-    ItemStack[] getStaffInventory();
-
-    ItemStack[] getStaffArmor();
 
     Set<String> getFriends();
 

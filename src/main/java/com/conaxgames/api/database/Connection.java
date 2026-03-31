@@ -160,9 +160,6 @@ public interface Connection {
 
     CompletableFuture<Boolean> setLoginStreak(UUID uuid, int streak, long timestamp);
 
-    CompletableFuture<Boolean> setStaffInventory(UUID uuid, String base64Inventory, String base64Armor);
-    CompletableFuture<Boolean> unsetStaffInventory(UUID uuid);
-
     void loadChatTags(IChatTagManager tagManager);
 
     CompletableFuture<Boolean> createDefaultTags(IChatTagManager tagManager);
