@@ -1,9 +1,9 @@
 package com.conaxgames.api.managers;
 
-import org.bukkit.entity.Player;
+import com.conaxgames.api.ICorePlayer;
 
 public interface ISoundManager {
 
-    void play(Player player, String sound);
+    void play(ICorePlayer corePlayer, String sound);
 
 }

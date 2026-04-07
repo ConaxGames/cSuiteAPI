@@ -1,27 +1,27 @@
 package com.conaxgames.api.events.party;
 
+import com.conaxgames.api.ICorePlayer;
 import com.conaxgames.api.events.CoreEvent;
 import com.conaxgames.api.interfaces.IParty;
 import lombok.Getter;
-import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 
 @Getter
 public class PartyKickEvent extends CoreEvent implements Cancellable {
 
     private final IParty party;
-    private final Player kicker;
-    private final Player kicked;
+    private final ICorePlayer kicker;
+    private final ICorePlayer kicked;
     private final long timestamp;
 
-    public PartyKickEvent(IParty party, Player kicker, Player kicked, long timestamp) {
+    private boolean cancelled;
+
+    public PartyKickEvent(IParty party, ICorePlayer kicker, ICorePlayer kicked, long timestamp) {
         this.party = party;
         this.kicker = kicker;
         this.kicked = kicked;
         this.timestamp = timestamp;
     }
-
-    private boolean cancelled;
 
     @Override
     public boolean isCancelled() {

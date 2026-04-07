@@ -1,7 +1,7 @@
 package com.conaxgames.api.interfaces;
 
+import com.conaxgames.api.ICorePlayer;
 import org.bukkit.ChatColor;
-import org.bukkit.entity.Player;
 
 public interface IChatTagColor {
 
@@ -15,6 +15,6 @@ public interface IChatTagColor {
 
     ChatColor getChatColor();
 
-    boolean hasPermission(Player player);
+    boolean hasPermission(ICorePlayer corePlayer);
 
 }

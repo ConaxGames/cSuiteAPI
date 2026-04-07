@@ -3,7 +3,6 @@ package com.conaxgames.api.interfaces;
 import com.conaxgames.api.ICorePlayer;
 import com.conaxgames.api.objects.RankWrapper;
 import org.bson.Document;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
 import java.util.List;
@@ -13,7 +12,7 @@ public interface IRankPluginProvider {
 
     Plugin getPlugin();
 
-    RankWrapper getRank(Player player);
+    RankWrapper getRank(ICorePlayer corePlayer);
 
     RankWrapper getRank(String player);
 
@@ -23,10 +22,10 @@ public interface IRankPluginProvider {
 
     List<IRank> getRanks();
 
-    double getRankWeight(Player player);
+    double getRankWeight(ICorePlayer corePlayer);
 
     void loadRanksAndPerms(Document document, ICorePlayer corePlayer);
 
-    void updatePermissions(Player player, ICorePlayer corePlayer, String reason);
+    void updatePermissions(ICorePlayer corePlayer, String reason);
 
 }

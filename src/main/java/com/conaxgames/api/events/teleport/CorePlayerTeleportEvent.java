@@ -1,48 +1,28 @@
 package com.conaxgames.api.events.teleport;
 
+import com.conaxgames.api.ICorePlayer;
 import com.conaxgames.api.events.CoreCancellableEvent;
 import com.conaxgames.api.objects.TeleportType;
+import lombok.Getter;
 import org.bukkit.Location;
-import org.bukkit.entity.Player;
-import org.bukkit.event.Cancellable;
-import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
+@Getter
 public final class CorePlayerTeleportEvent extends CoreCancellableEvent {
+
     private static final HandlerList handlers = new HandlerList();
 
-    private final TeleportType tpType;
-    private final Player player;
+    private final TeleportType teleportType;
+    private final ICorePlayer corePlayer;
     private final Location location;
 
-    private boolean cancelled;
-
-    public CorePlayerTeleportEvent(TeleportType teleportType, Player player, Location location) {
-        this.tpType = teleportType;
-        this.player = player;
+    public CorePlayerTeleportEvent(TeleportType teleportType, ICorePlayer corePlayer, Location location) {
+        this.teleportType = teleportType;
+        this.corePlayer = corePlayer;
         this.location = location;
     }
 
-    public Player getPlayer() {
-        return this.player;
-    }
-
-    public Location getLocation() {
-        return this.location;
-    }
-
-    public TeleportType getTeleportType() {
-        return this.tpType;
-    }
-
-    public boolean isCancelled() {
-        return cancelled;
-    }
-
-    public void setCancelled(boolean cancel) {
-        cancelled = cancel;
-    }
-
+    @Override
     public HandlerList getHandlers() {
         return handlers;
     }

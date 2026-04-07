@@ -1,25 +1,25 @@
 package com.conaxgames.api.events.guilds;
 
+import com.conaxgames.api.ICorePlayer;
 import com.conaxgames.api.events.CoreEvent;
 import com.conaxgames.api.interfaces.IGuild;
 import lombok.Getter;
-import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 
 @Getter
 public class GuildMemberLeaveEvent extends CoreEvent implements Cancellable {
 
     private final IGuild guild;
-    private final Player player;
+    private final ICorePlayer member;
     private final long timestamp;
 
-    public GuildMemberLeaveEvent(IGuild guild, Player leaving, long timestamp) {
+    private boolean cancelled;
+
+    public GuildMemberLeaveEvent(IGuild guild, ICorePlayer member, long timestamp) {
         this.guild = guild;
-        this.player = leaving;
+        this.member = member;
         this.timestamp = timestamp;
     }
-
-    private boolean cancelled;
 
     @Override
     public boolean isCancelled() {

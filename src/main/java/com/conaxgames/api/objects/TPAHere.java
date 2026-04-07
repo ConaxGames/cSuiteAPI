@@ -1,17 +1,16 @@
 package com.conaxgames.api.objects;
 
+import com.conaxgames.api.ICorePlayer;
 import lombok.*;
-import org.bukkit.entity.Player;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @RequiredArgsConstructor
-
 public class TPAHere {
-    @NonNull private Player sender;
-    @NonNull private Player receiver;
+    @NonNull private ICorePlayer sender;
+    @NonNull private ICorePlayer receiver;
     private long sentAt;
     private boolean denied;
 }

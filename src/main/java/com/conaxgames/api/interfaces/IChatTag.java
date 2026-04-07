@@ -1,6 +1,6 @@
 package com.conaxgames.api.interfaces;
 
-import org.bukkit.entity.Player;
+import com.conaxgames.api.ICorePlayer;
 
 public interface IChatTag {
 
@@ -20,6 +20,6 @@ public interface IChatTag {
 
     boolean isPrivate();
 
-    boolean hasPermission(Player player);
+    boolean hasPermission(ICorePlayer corePlayer);
 
 }

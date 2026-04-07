@@ -1,20 +1,20 @@
 package com.conaxgames.api.managers;
 
-import org.bukkit.entity.Player;
+import com.conaxgames.api.ICorePlayer;
 import org.bukkit.inventory.InventoryView;
 
 public interface IContainerProvider {
 
-    InventoryView openAnvil(Player player);
+    InventoryView openAnvil(ICorePlayer corePlayer);
 
-    InventoryView openCartographyTable(Player player);
+    InventoryView openCartographyTable(ICorePlayer corePlayer);
 
-    InventoryView openGrindstone(Player player);
+    InventoryView openGrindstone(ICorePlayer corePlayer);
 
-    InventoryView openLoom(Player player);
+    InventoryView openLoom(ICorePlayer corePlayer);
 
-    InventoryView openSmithingTable(Player player);
+    InventoryView openSmithingTable(ICorePlayer corePlayer);
 
-    InventoryView openStonecutter(Player player);
+    InventoryView openStonecutter(ICorePlayer corePlayer);
 
 }
