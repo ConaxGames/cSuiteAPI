@@ -1,12 +1,10 @@
 package com.conaxgames.api.redis;
 
-
 import com.conaxgames.libraries.redis.message.MessageTypeInterface;
 
 public enum MessageType implements MessageTypeInterface {
     UNKNOWN,
 
-    // Essentials
     HEARTBEAT,
     BROADCAST,
     SEND_MESSAGE,
@@ -19,12 +17,10 @@ public enum MessageType implements MessageTypeInterface {
     EXECUTE_COMMAND,
     RELOAD_NETWORK_CONFIG,
 
-    // Scopes
     SCOPE_CREATE,
     SCOPE_DELETE,
     SCOPE_EDIT,
 
-    // Ranks
     RANK_CREATE,
     RANK_DELETE,
     RANK_PERMISSION_ADD,
@@ -40,15 +36,11 @@ public enum MessageType implements MessageTypeInterface {
     RANK_EDIT_COLOR,
     RANK_EDIT_WEIGHT,
 
-    // Bungee (removed - using Velocity instead)
-
-    // Velocity
     VELOCITY_PLAYER_PERMISSIONS,
     VELOCITY_SEND_MESSAGE,
     VELOCITY_STAFF_SERVER_SWITCH,
     VELOCITY_FRIEND_SERVER_SWITCH,
 
-    // Chat Tags
     TAG_CREATE,
     TAG_DELETE,
     TAG_EDIT,
@@ -59,7 +51,6 @@ public enum MessageType implements MessageTypeInterface {
     TAG_EDIT_SUFFIX,
     TAG_EDIT_PRIVATE,
 
-    // Guilds
     GUILD_CREATE,
     GUILD_DELETE,
     GUILD_CHAT,
@@ -78,14 +69,12 @@ public enum MessageType implements MessageTypeInterface {
     GUILD_OPEN,
     GUILD_CLOSE,
 
-    // Guilds Admin
     GUILD_ADMIN_TAG_COLOR_UNLOCK,
     GUILD_ADMIN_TAG_COLOR_LOCK,
     GUILD_ADMIN_SET_MAX_MEMBERS,
 
     STAFF_STATUS_UPDATE,
 
-    // Maintenance
     MAINTENANCE_STATE,
-    MAINTENANCE_WHITELIST;
+    MAINTENANCE_WHITELIST
 }

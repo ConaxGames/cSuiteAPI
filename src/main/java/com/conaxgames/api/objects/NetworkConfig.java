@@ -24,7 +24,6 @@ public class NetworkConfig {
     public String networkTwitterLink = "https://www.twitter.com/conaxgames";
     public String networkStoreLink = "https://store.conaxgames.net/";
 
-    // Hub Server Identification
     public List<String> hubServerIdentifiers = Arrays.asList("hub", "lobby");
 
     public String alreadyOwnChatTagCurrency = "coins";
@@ -33,23 +32,18 @@ public class NetworkConfig {
     public String alreadyOwnChatTagColorCurrency = "coins";
     public Integer alreadyOwnChatTagColorReplacement = 250;
 
-    // Guild
     public Integer guildDefaultMemberLimit = 50;
 
-    // Tag Player Name in chat
     public Boolean tagMentionNamesInChat = false;
     public String tagMentionNamesFormat = "&d&o%NAME%";
 
-    // Command Blocker
     public Boolean commandBlockerEnabled = true;
     public String commandBlockerBlockMessage = "&fUnknown command. Type /help for help.";
     public List<String> commandBlockerTerms = Arrays.asList("?", "bukkit:?", "bukkit:help", "/me", "/teammsg");
 
-    // Tab Blocker
     public Boolean tabBlockerEnabled = true;
     public List<String> tabBlockerTerms = Arrays.asList("?", "bukkit:?", "bukkit:help", "/ver", "/version", "/?", "/about", "/help");
 
-    // Global Chat Filter
     public List<String> hardFilteredTerms = Arrays.asList("nigger", "niggerr", "niggerrr", "niggerrrr", "niggger", "nigggger", "niggggger", "nigga", "niggaa",
             "niggaaa", "niggaaaa", "niga", "nigaa", "nigaaa", "nigaaaa", "nigga", "niggga", "nigggga", "niggggga");
     public List<String> softFilteredTerms = Arrays.asList("nigga", "niga");
@@ -59,7 +53,6 @@ public class NetworkConfig {
     public Double jaroDetectionBound = 0.85;
     public Boolean informPlayerOfFilteredMessage = true;
 
-    // Global Chat Auto Mod
     public String autoSpamDetectionCommand = "tmute %PLAYER% %LENGTH% (Auto) Spamming -s";
     public List<String> autoSpamDetectionLengths = Arrays.asList("10m", "30m", "1h", "3h", "6h", "12h", "1d");
     public String autoToxicityDetectionCommand = "tmute %PLAYER% %LENGTH% (Auto) Toxicity (%REASON%) -s";
@@ -76,9 +69,7 @@ public class NetworkConfig {
     public Object getValue(Field field) {
         try {
             field.setAccessible(true);
-
-            NetworkConfig networkConfig = this;
-            return field.get(networkConfig);
+            return field.get(this);
         } catch (IllegalAccessException e) {
             throw new RuntimeException(e);
         }
@@ -86,14 +77,10 @@ public class NetworkConfig {
 
     public Map<String, Object> getValues() {
         Map<String, Object> values = new HashMap<>();
-
-        NetworkConfig networkConfig = this;
-        for (Field field : networkConfig.getClass().getFields()) {
+        for (Field field : this.getClass().getFields()) {
             field.setAccessible(true);
-
             try {
-                Object fieldValue = field.get(networkConfig);
-                values.put(field.getName(), fieldValue);
+                values.put(field.getName(), field.get(this));
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             }
@@ -102,14 +89,12 @@ public class NetworkConfig {
     }
 
     public void reload(Document document) {
-        NetworkConfig networkConfig = this;
-        for (Field field : networkConfig.getClass().getFields()) {
+        for (Field field : this.getClass().getFields()) {
             field.setAccessible(true);
-
             try {
                 if (document.containsKey(field.getName())) {
                     Object savedValue = document.get(field.getName());
-                    field.set(networkConfig, savedValue);
+                    field.set(this, savedValue);
                 }
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
@@ -118,14 +103,11 @@ public class NetworkConfig {
     }
 
     public Document toDocument() {
-        NetworkConfig networkConfig = this;
         Document document = new Document("type", "networkConfig");
-
-        for (Field field : networkConfig.getClass().getFields()) {
+        for (Field field : this.getClass().getFields()) {
             field.setAccessible(true);
-
             try {
-                Object fieldValue = field.get(networkConfig);
+                Object fieldValue = field.get(this);
                 if (fieldValue != null) {
                     document.append(field.getName(), fieldValue);
                 }
@@ -133,7 +115,6 @@ public class NetworkConfig {
                 e.printStackTrace();
             }
         }
-
         return document;
     }
 
