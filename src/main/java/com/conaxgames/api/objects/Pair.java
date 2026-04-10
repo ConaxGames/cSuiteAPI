@@ -10,7 +10,7 @@ public class Pair<A, B> {
         this.b = b;
     }
 
-    public static Pair fromString(String s) {
+    public static Pair<Integer, Integer> fromString(String s) {
         String[] nums = s.split(",");
         return new Pair<>(Integer.parseInt(nums[0]), Integer.parseInt(nums[1]));
     }
@@ -41,11 +41,11 @@ public class Pair<A, B> {
             return false;
         }
 
-        if (!(o instanceof Pair)) {
+        if (!(o instanceof Pair<?, ?>)) {
             return false;
         }
 
-        Pair p = (Pair) o;
+        Pair<?, ?> p = (Pair<?, ?>) o;
         return this.a.equals(p.getA()) && this.b.equals(p.getB());
     }
 
