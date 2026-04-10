@@ -12,7 +12,10 @@ import org.bson.conversions.Bson;
 import org.bukkit.command.CommandSender;
 
 import java.lang.reflect.Field;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 
 public interface Connection {
@@ -20,16 +23,27 @@ public interface Connection {
     void closeConnection();
 
     MongoDatabase getDatabase();
+
     MongoCollection<Document> getProfilesCollection();
+
     MongoCollection<Document> getChatTagsCollection();
+
     MongoCollection<Document> getPunishmentsCollection();
+
     MongoCollection<Document> getGuildsCollection();
+
     MongoCollection<Document> getGuildInvitesCollection();
+
     MongoCollection<Document> getGuildMembersCollection();
+
     MongoCollection<Document> getGrantsCollection();
+
     MongoCollection<Document> getRanksCollection();
+
     MongoCollection<Document> getAuditCollection();
+
     MongoCollection<Document> getNetworkCollection();
+
     MongoCollection<Scope> getScopesCollection();
 
     CompletableFuture<Boolean> profileAlreadyExists(UUID uuid);
@@ -185,6 +199,7 @@ public interface Connection {
     CompletableFuture<Boolean> scopeAlreadyExists(String id);
 
     CompletableFuture<List<IPunishment>> loadPunishments(UUID uuid);
+
     CompletableFuture<List<StaffHistoryPunishment>> loadStaffHistory(UUID uuid);
 
     void audit(UUID uuid, String currentUsername, String key, List<Pair<String, Object>> fields);

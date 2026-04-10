@@ -1,7 +1,7 @@
 package com.conaxgames.api.events.freeze;
 
-import com.conaxgames.api.events.CoreEvent;
 import com.conaxgames.api.ICorePlayer;
+import com.conaxgames.api.events.CoreEvent;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 

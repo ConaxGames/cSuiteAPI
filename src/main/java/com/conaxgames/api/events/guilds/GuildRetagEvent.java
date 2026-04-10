@@ -1,7 +1,7 @@
 package com.conaxgames.api.events.guilds;
 
-import com.conaxgames.api.events.CoreEvent;
 import com.conaxgames.api.ICorePlayer;
+import com.conaxgames.api.events.CoreEvent;
 import com.conaxgames.api.interfaces.IGuild;
 import lombok.Getter;
 import org.bukkit.event.Cancellable;
@@ -19,7 +19,7 @@ public class GuildRetagEvent extends CoreEvent implements Cancellable {
     public GuildRetagEvent(IGuild guild, ICorePlayer leader, String newGuildTag, long timestamp) {
         this.guild = guild;
         this.leader = leader;
-        this.newGuildTag = newGuildTag ;
+        this.newGuildTag = newGuildTag;
         this.timestamp = timestamp;
     }
 

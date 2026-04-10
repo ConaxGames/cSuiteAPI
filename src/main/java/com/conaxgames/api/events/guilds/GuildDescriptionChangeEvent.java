@@ -1,7 +1,7 @@
 package com.conaxgames.api.events.guilds;
 
-import com.conaxgames.api.events.CoreEvent;
 import com.conaxgames.api.ICorePlayer;
+import com.conaxgames.api.events.CoreEvent;
 import com.conaxgames.api.interfaces.IGuild;
 import lombok.Getter;
 import org.bukkit.event.Cancellable;
@@ -13,6 +13,7 @@ public class GuildDescriptionChangeEvent extends CoreEvent implements Cancellabl
     private final ICorePlayer changer;
     private final String newDescription;
     private final long timestamp;
+    private boolean cancelled;
 
     public GuildDescriptionChangeEvent(IGuild guild, ICorePlayer changer, String newDescription, long timestamp) {
         this.guild = guild;
@@ -20,8 +21,6 @@ public class GuildDescriptionChangeEvent extends CoreEvent implements Cancellabl
         this.newDescription = newDescription;
         this.timestamp = timestamp;
     }
-
-    private boolean cancelled;
 
     @Override
     public boolean isCancelled() {

@@ -3,11 +3,13 @@ package com.conaxgames.api.objects;
 import com.conaxgames.api.interfaces.IScope;
 import lombok.*;
 
-@Getter @Setter
+@Getter
+@Setter
 @NoArgsConstructor
 @RequiredArgsConstructor
 public class Scope implements IScope {
 
-    @NonNull private String id;
+    @NonNull
+    private String id;
 
 }

@@ -10,9 +10,8 @@ public class CorePlayerCurrencyRemoveEvent extends CoreEvent implements Cancella
 
     private final ICorePlayer corePlayer;
     private final String currency;
-    private int amount;
     private final String reason;
-
+    private int amount;
     private boolean cancelled;
 
     public CorePlayerCurrencyRemoveEvent(ICorePlayer corePlayer, String currency, int amount, String reason) {

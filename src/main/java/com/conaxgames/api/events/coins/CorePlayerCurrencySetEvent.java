@@ -10,9 +10,8 @@ public class CorePlayerCurrencySetEvent extends CoreEvent implements Cancellable
 
     private final ICorePlayer corePlayer;
     private final String currency;
-    private int amount;
     private final String reason;
-
+    private int amount;
     private boolean cancelled;
 
     public CorePlayerCurrencySetEvent(ICorePlayer corePlayer, String currency, int amount, String reason) {

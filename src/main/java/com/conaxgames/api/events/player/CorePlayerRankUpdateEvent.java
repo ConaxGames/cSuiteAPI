@@ -10,8 +10,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class CorePlayerRankUpdateEvent extends CoreEvent {
 
-	private final ICorePlayer corePlayer;
-	private final IRank from;
-	private final IRank to;
+    private final ICorePlayer corePlayer;
+    private final IRank from;
+    private final IRank to;
 
 }

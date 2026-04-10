@@ -22,7 +22,7 @@ public interface IGrant {
 
     String getCreatedReason();
 
-    long getDuration ();
+    long getDuration();
 
     boolean isActive();
 

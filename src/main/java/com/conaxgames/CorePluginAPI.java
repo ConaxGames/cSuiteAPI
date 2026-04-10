@@ -8,17 +8,13 @@ import lombok.Getter;
 @Getter
 public final class CorePluginAPI {
 
-    private static ICorePlugin plugin;
-
     public static CorePluginAPI instance;
+    @Getter
+    private static ICorePlugin plugin;
 
     public CorePluginAPI(ICorePlugin corePlugin) {
         instance = this;
         plugin = corePlugin;
-    }
-
-    public static ICorePlugin getPlugin() {
-        return plugin;
     }
 
     public static void sendDebug(String action, String info) {

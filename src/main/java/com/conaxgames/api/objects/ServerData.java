@@ -8,13 +8,13 @@ import lombok.Setter;
 @Setter
 public class ServerData {
 
-	private String serverName;
-	private int onlinePlayers;
-	private int maxPlayers;
-	private long lastUpdate;
-	private boolean joinable = true;
-	private boolean whitelisted;
-	private long startedAt;
-	public double tps;
-	private JsonObject extra;
+    public double tps;
+    private String serverName;
+    private int onlinePlayers;
+    private int maxPlayers;
+    private long lastUpdate;
+    private boolean joinable = true;
+    private boolean whitelisted;
+    private long startedAt;
+    private JsonObject extra;
 }

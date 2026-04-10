@@ -6,7 +6,10 @@ import com.conaxgames.api.objects.ChatType;
 import com.conaxgames.api.objects.Language;
 import org.bukkit.entity.Player;
 
-import java.util.*;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
 
 public interface ICorePlayer {
 
@@ -102,11 +105,11 @@ public interface ICorePlayer {
 
     long getLastLoginStreak();
 
+    void setLastLoginStreak(long timeStamp);
+
     int getLoginStreak();
 
     void setLoginStreak(int value);
-
-    void setLastLoginStreak(long timeStamp);
 
     String getDisplayName();
 

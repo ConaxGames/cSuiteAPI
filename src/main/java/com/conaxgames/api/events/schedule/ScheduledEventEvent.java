@@ -12,12 +12,12 @@ public class ScheduledEventEvent extends Event {
     private static final HandlerList handlers = new HandlerList();
     private final String eventName;
 
-    @Override
-    public HandlerList getHandlers() {
+    public static HandlerList getHandlerList() {
         return handlers;
     }
 
-    public static HandlerList getHandlerList() {
+    @Override
+    public HandlerList getHandlers() {
         return handlers;
     }
 }

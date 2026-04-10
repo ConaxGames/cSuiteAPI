@@ -2,7 +2,6 @@ package com.conaxgames.api.events.player;
 
 import com.conaxgames.api.ICorePlayer;
 import com.conaxgames.api.events.CoreCancellableEvent;
-import com.conaxgames.api.events.CoreEvent;
 import com.conaxgames.api.interfaces.IChatTag;
 import lombok.Getter;
 

@@ -1,7 +1,7 @@
 package com.conaxgames.api.events.coins;
 
-import com.conaxgames.api.events.CoreEvent;
 import com.conaxgames.api.ICorePlayer;
+import com.conaxgames.api.events.CoreEvent;
 import lombok.Getter;
 import org.bukkit.event.Cancellable;
 
@@ -10,10 +10,9 @@ public class CorePlayerCurrencyAddEvent extends CoreEvent implements Cancellable
 
     private final ICorePlayer corePlayer;
     private final String currency;
+    private final String reason;
     private int amount;
     private double multiplier;
-    private final String reason;
-
     private boolean cancelled;
 
     public CorePlayerCurrencyAddEvent(ICorePlayer corePlayer, String currency, int amount, double multiplier, String reason) {
