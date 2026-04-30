@@ -41,4 +41,4 @@ Vendor with shade and relocate `com.conaxgames` to your plugin namespace ([Maven
 
 <i>csuite-api ships against papermc tooling and owes its stability to upstream platform work:</i>
 
-[PaperMC](https://papermc.io/) · [Folia](https://papermc.io/software/folia)
+[Paper](https://papermc.io/software/paper) · [Folia](https://papermc.io/software/folia) · [Velocity](https://papermc.io/software/velocity)
