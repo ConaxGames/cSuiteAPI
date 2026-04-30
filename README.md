@@ -25,14 +25,14 @@
 <dependency>
     <groupId>com.conaxgames</groupId>
     <artifactId>csuite-api</artifactId>
-    <version>1.1.3</version>
+    <version>1.1.5</version>
 </dependency>
 ```
 
 **Gradle**
 
 ```groovy
-compileOnly group: 'com.conaxgames', name: 'csuite-api', version: '1.1.3'
+compileOnly group: 'com.conaxgames', name: 'csuite-api', version: '1.1.5'
 ```
 
 Vendor with shade and relocate `com.conaxgames` to your plugin namespace ([Maven Shade](https://maven.apache.org/plugins/maven-shade-plugin/examples/class-relocation.html) · [Shadow](https://gradleup.com/shadow/configuration/relocation/)).
