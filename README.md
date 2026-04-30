@@ -1,7 +1,7 @@
 <!--suppress HtmlDeprecatedAttribute -->
 
 <div align="center">
-    <h2><i>csuite-api</i></h2>
+    <h2><i>cSuite API</i></h2>
     <h3>Public API surface for building against the cSuite ecosystem on PaperMC.</h3>
     <a href="https://github.com/ConaxGames/csuite-api/actions/workflows/uploader-and-publisher.yml"><img src="https://img.shields.io/github/actions/workflow/status/ConaxGames/csuite-api/uploader-and-publisher.yml?style=for-the-badge&logo=github" alt="CI"></a>
     <img src="https://img.shields.io/github/license/ConaxGames/csuite-api?style=for-the-badge&logo=github" alt="License">
