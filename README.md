@@ -1,68 +1,44 @@
-# cSuite API
+<!--suppress HtmlDeprecatedAttribute -->
 
-**Overview**
+<div align="center">
+    <h2><i>csuite-api</i></h2>
+    <h3>Public API surface for building against the cSuite ecosystem on PaperMC.</h3>
+    <a href="https://github.com/ConaxGames/csuite-api/actions/workflows/uploader-and-publisher.yml"><img src="https://img.shields.io/github/actions/workflow/status/ConaxGames/csuite-api/uploader-and-publisher.yml?style=for-the-badge&logo=github" alt="CI"></a>
+    <img src="https://img.shields.io/github/license/ConaxGames/csuite-api?style=for-the-badge&logo=github" alt="License">
+    <a href="https://github.com/ConaxGames/csuite-api/releases"><img src="https://img.shields.io/github/downloads/ConaxGames/csuite-api/total.svg?style=for-the-badge&logo=github" alt="Downloads"></a>
+    <a href="https://discord.com/invite/fYZt22SmTp"><img src="https://img.shields.io/badge/Discord-ConaxGames-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
+</div>
 
-The cSuite API is a comprehensive framework designed to integrate seamlessly with an all-in-one (AIO) server core for PaperMC servers. Developed by ConaxGames, this API provides tools and utilities tailored to simplify server management and plugin development, enabling streamlined and innovative server operations.
+<h3>Resources</h3>
 
----
+- [Maven Central](https://central.sonatype.com/search?name=csuite-api&namespace=com.conaxgames&type=maven)
+    - [Repository directory](https://repo.maven.apache.org/maven2/com/conaxgames/csuite-api/)
+- [Releases](https://github.com/ConaxGames/csuite-api/releases/)
+    - [Latest](https://github.com/ConaxGames/csuite-api/releases/latest)
+- [Java source](https://github.com/ConaxGames/csuite-api/tree/main/src/main/java/com/conaxgames)
 
-## Features
+<h3>Install</h3>
 
-- **AIO Core Integration:** Designed specifically to enhance and extend an AIO server core for PaperMC.
-- **Utility Classes:** Offers pre-built utilities for server operations and plugin development, minimizing boilerplate code.
-- **Extensibility:** Modular and flexible design to suit various server setups and customizations.
-- **Performance-Optimized:** Built to handle high-performance requirements of modern PaperMC servers.
+**Maven**
 
----
-
-## Getting Started
-
-To begin using the cSuite API in your project, select your preferred build automation tool from the dropdown (_Maven_ or _Gradle_) to view the setup instructions.
-
-<details>
-    <summary>Maven</summary>
-
-Add the following lines to your `pom.xml` inside of `dependencies` block:
 ```xml
 <dependency>
     <groupId>com.conaxgames</groupId>
     <artifactId>csuite-api</artifactId>
     <version>1.1.3</version>
-    <scope>compile</scope>
 </dependency>
 ```
 
-Ensure the API is shaded into your plugin to prevent conflicts, you should configure the _[maven-shade-plugin](https://maven.apache.org/plugins/maven-shade-plugin/)_ with relocation in your `pom.xml`:
+**Gradle**
 
-```xml
-<configuration>
-    <relocations>
-        <relocation>
-            <pattern>com.conaxgames</pattern>
-            <shadedPattern>com.conaxgames.{yourplugin}.csuite</shadedPattern>
-        </relocation>
-    </relocations>
-</configuration>
-```
-</details>
-
-<details>
-    <summary>Gradle</summary>
-
-Add the following lines to your `build.gradle` inside of `dependencies` block:
 ```groovy
 compileOnly group: 'com.conaxgames', name: 'csuite-api', version: '1.1.3'
 ```
 
-Ensure the API is shaded into your plugin to prevent conflicts, you should configure the _[Shadow Plugin](https://plugins.gradle.org/plugin/com.github.johnrengelman.shadow)_ with relocation in your `build.gradle`:
+Vendor with shade and relocate `com.conaxgames` to your plugin namespace ([Maven Shade](https://maven.apache.org/plugins/maven-shade-plugin/examples/class-relocation.html) · [Shadow](https://gradleup.com/shadow/configuration/relocation/)).
 
-```groovy
-relocate 'com.conaxgames', 'com.conaxgames.{yourplugin}.csuite'
-```
-</details>
+<h3>Credits</h3>
 
----
+<i>csuite-api ships against papermc tooling and owes its stability to upstream platform work:</i>
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+[PaperMC](https://papermc.io/) · [Folia](https://papermc.io/software/folia)

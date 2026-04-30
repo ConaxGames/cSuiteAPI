@@ -8,9 +8,9 @@
     <artifactId>csuite-api</artifactId>
     <version>dev</version>
 
-    <name>cSuite API</name>
+    <name>csuite-api</name>
     <description>A lightweight, high-performance API designed for seamless integration with an all-in-one server core, enabling efficient development for PaperMC servers.</description>
-    <url>https://github.com/ConaxGames/cSuiteAPI</url>
+    <url>https://github.com/ConaxGames/csuite-api</url>
 
     <developers>
         <developer>
@@ -23,15 +23,15 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/ConaxGames/cSuiteAPI.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/ConaxGames/cSuiteAPI.git</developerConnection>
-        <url>https://github.com/ConaxGames/cSuiteAPI/tree/main</url>
+        <connection>scm:git:https://github.com/ConaxGames/csuite-api.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/ConaxGames/csuite-api.git</developerConnection>
+        <url>https://github.com/ConaxGames/csuite-api/tree/main</url>
     </scm>
 
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>https://github.com/ConaxGames/cSuiteAPI/blob/main/LICENSE</url>
+            <url>https://github.com/ConaxGames/csuite-api/blob/main/LICENSE</url>
         </license>
     </licenses>
 
