@@ -36,11 +36,12 @@ jobs:
           include: pom.xml
           find: <version>dev</version>
           replace: <version>${{ github.ref_name }}</version>
-      - run: mvn --batch-mode --update-snapshots verify deploy
+      - run: mvn --batch-mode --update-snapshots verify package
       - uses: softprops/action-gh-release@v3
         with:
           files: target/*.jar
           generate_release_notes: true
+      - run: mvn --batch-mode --update-snapshots -DskipTests deploy
       - uses: jacobtomlinson/gha-find-replace@v3
         with:
           include: README.md
