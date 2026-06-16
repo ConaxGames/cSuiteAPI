@@ -49,8 +49,6 @@ public interface ICorePlayer {
 
     String getNickname();
 
-    long getReportCooldown();
-
     long getCommandCooldown();
 
     long getChatCooldown();
