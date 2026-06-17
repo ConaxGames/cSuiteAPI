@@ -132,6 +132,10 @@ public interface Connection {
 
     CompletableFuture<Boolean> setStaffMode(UUID uuid, Boolean value);
 
+    CompletableFuture<Boolean> setStaffSnapshot(UUID uuid, String base64);
+
+    CompletableFuture<Boolean> unsetStaffSnapshot(UUID uuid);
+
     CompletableFuture<Boolean> setGlobalChatToggle(UUID uuid, Boolean value);
 
     CompletableFuture<Boolean> setPrivateMessageToggle(UUID uuid, Boolean value);
