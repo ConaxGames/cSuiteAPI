@@ -49,6 +49,8 @@ public interface ICorePlugin {
 
     IPartyManager getPartyManager();
 
+    IPlayerSettingsManager getPlayerSettingsManager();
+
     PaperCommandManager getPaperCommandManager();
 
     void sendCritical(String action, String info, Throwable... throwables);
