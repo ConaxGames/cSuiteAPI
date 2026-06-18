@@ -30,6 +30,8 @@ public interface Connection {
 
     MongoCollection<Document> getPunishmentsCollection();
 
+    MongoCollection<Document> getInvBackupsCollection();
+
     MongoCollection<Document> getGuildsCollection();
 
     MongoCollection<Document> getGuildInvitesCollection();
@@ -205,6 +207,10 @@ public interface Connection {
     CompletableFuture<List<IPunishment>> loadPunishments(UUID uuid);
 
     CompletableFuture<List<StaffHistoryPunishment>> loadStaffHistory(UUID uuid);
+
+    CompletableFuture<Void> pushInventoryBackup(UUID uuid, String serverId, String type, long at, String base64);
+
+    CompletableFuture<List<Document>> loadInventoryBackups(UUID uuid, String serverId, String type);
 
     void audit(UUID uuid, String currentUsername, String key, List<Pair<String, Object>> fields);
 
