@@ -48,7 +48,6 @@ public class NetworkConfig {
             "niggaaa", "niggaaaa", "niga", "nigaa", "nigaaa", "nigaaaa", "nigga", "niggga", "nigggga", "niggggga");
     public List<String> softFilteredTerms = Arrays.asList("nigga", "niga");
     public Boolean limitCapsInGlobalChat = true;
-    public Boolean limitCharacterSpam = true;
     public Boolean useJaroFilter = true;
     public Double jaroDetectionBound = 0.85;
     public Boolean informPlayerOfFilteredMessage = true;
