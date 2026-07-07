@@ -1,11 +1,13 @@
 package com.conaxgames.api;
 
 import com.conaxgames.api.database.ICoreDatabase;
+import com.conaxgames.api.interfaces.IFilterResult;
 import com.conaxgames.api.managers.*;
 import com.conaxgames.libraries.LibraryPlugin;
 import com.conaxgames.libraries.acf.PaperCommandManager;
 import com.mongodb.client.MongoCollection;
 import org.bson.Document;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -52,6 +54,8 @@ public interface ICorePlugin {
     IPlayerSettingsManager getPlayerSettingsManager();
 
     PaperCommandManager getPaperCommandManager();
+
+    IFilterResult filterMessage(String location, Player player, String message, boolean notify);
 
     void sendCritical(String action, String info, Throwable... throwables);
 
