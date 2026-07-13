@@ -14,6 +14,10 @@ public interface IGuildManager {
 
     IGuild getGuildByGuildID(int id);
 
+    IGuild createGuild(String name, String tag, UUID leader, String leaderName);
+
+    void addGuildMember(int guildId, UUID uuid, String name, GuildRank rank);
+
     boolean hasGuildPvPBypass(UUID player1, UUID player2);
 
     void setGuildPvPBypass(UUID player1, UUID player2, boolean bypass);
