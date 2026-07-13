@@ -53,6 +53,8 @@ public interface ICorePlugin {
 
     IPlayerSettingsManager getPlayerSettingsManager();
 
+    IEconomyManager getEconomyManager();
+
     PaperCommandManager getPaperCommandManager();
 
     IFilterResult filterMessage(String location, Player player, String message, boolean notify);
