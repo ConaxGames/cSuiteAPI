@@ -41,8 +41,6 @@ public interface IGuild {
 
     String getTagStyled();
 
-    IGuildTagColor getSelectedTagColor();
-
     double getBankBalance();
 
     void setBankBalance(double amount);
