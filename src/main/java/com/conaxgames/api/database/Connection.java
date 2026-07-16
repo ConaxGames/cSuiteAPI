@@ -34,8 +34,6 @@ public interface Connection {
 
     MongoCollection<Document> getGuildsCollection();
 
-    MongoCollection<Document> getGuildInvitesCollection();
-
     MongoCollection<Document> getGuildMembersCollection();
 
     MongoCollection<Document> getGrantsCollection();

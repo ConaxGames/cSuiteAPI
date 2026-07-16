@@ -69,6 +69,7 @@ public enum MessageType implements MessageTypeInterface {
     GUILD_CLOSE,
 
     GUILD_ADMIN_SET_MAX_MEMBERS,
+    GUILD_UPDATE,
 
     STAFF_STATUS_UPDATE,
 

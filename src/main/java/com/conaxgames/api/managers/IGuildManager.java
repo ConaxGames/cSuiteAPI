@@ -16,7 +16,11 @@ public interface IGuildManager {
 
     IGuild createGuild(String name, String tag, UUID leader, String leaderName);
 
+    void deleteGuild(int guildId);
+
     void addGuildMember(int guildId, UUID uuid, String name, GuildRank rank);
+
+    void removeGuildMember(int guildId, UUID uuid);
 
     boolean hasGuildPvPBypass(UUID player1, UUID player2);
 
