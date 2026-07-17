@@ -10,7 +10,7 @@ public interface IGuildManager {
 
     boolean isRankedAtLeast(ICorePlayer corePlayer, GuildRank guildRank);
 
-    IGuild getGuildAllMethods(String idOrName);
+    IGuild getGuild(String idOrName);
 
     IGuild getGuildByGuildID(int id);
 
