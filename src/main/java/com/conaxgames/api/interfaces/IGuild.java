@@ -44,19 +44,4 @@ public interface IGuild {
     double getBankBalance();
 
     void setBankBalance(double amount);
-
-    default double getWageAmount() {
-        return 0.0;
-    }
-
-    default void setWageAmount(double amount) {
-    }
-
-    default long getLastWagePayment() {
-        return 0L;
-    }
-
-    default boolean hasEnoughFundsForWages() {
-        return true;
-    }
 }
