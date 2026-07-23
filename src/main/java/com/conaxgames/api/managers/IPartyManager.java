@@ -2,7 +2,6 @@ package com.conaxgames.api.managers;
 
 import com.conaxgames.api.interfaces.IParty;
 
-import java.util.Collection;
 import java.util.UUID;
 
 public interface IPartyManager {
@@ -29,13 +28,5 @@ public interface IPartyManager {
 
     void acceptInvite(UUID playerId);
 
-    Collection<IParty> getAllParties();
-
-    int getTotalParties();
-
-    int getTotalPlayersInParties();
-
     int getMaxPartySize();
-
-    void setMaxPartySize(int maxSize);
 }

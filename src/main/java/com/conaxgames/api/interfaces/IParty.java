@@ -18,19 +18,11 @@ public interface IParty {
 
     int getSize();
 
-    long getCreatedAt();
-
-    boolean isEmpty();
-
     void broadcast(String message);
 
     void broadcast(String message, UUID exclude);
 
     List<ICorePlayer> getOnlineMembers();
-
-    void transferLeadership(UUID newLeader);
-
-    UUID getNextLeader();
 
     void addMember(UUID playerId);
 
