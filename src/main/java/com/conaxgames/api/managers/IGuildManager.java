@@ -22,8 +22,8 @@ public interface IGuildManager {
 
     void removeGuildMember(int guildId, UUID uuid);
 
-    boolean hasGuildPvPBypass(UUID player1, UUID player2);
+    boolean isGuildCombat(UUID player);
 
-    void setGuildPvPBypass(UUID player1, UUID player2, boolean bypass);
+    void setGuildCombat(UUID player, boolean enabled);
 
 }
