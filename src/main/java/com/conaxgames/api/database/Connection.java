@@ -66,8 +66,6 @@ public interface Connection {
 
     CompletableFuture<Boolean> setSocials(UUID uuid, Map<String, String> links);
 
-    CompletableFuture<Map<String, String>> getSocials(UUID uuid);
-
     CompletableFuture<Boolean> incrementFilterSpam(UUID uuid, Integer amount);
 
     CompletableFuture<Boolean> incrementFilterToxicity(UUID uuid, Integer amount);
