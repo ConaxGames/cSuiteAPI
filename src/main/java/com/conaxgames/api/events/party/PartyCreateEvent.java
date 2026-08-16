@@ -4,30 +4,16 @@ import com.conaxgames.api.ICorePlayer;
 import com.conaxgames.api.events.CoreEvent;
 import com.conaxgames.api.interfaces.IParty;
 import lombok.Getter;
-import org.bukkit.event.Cancellable;
 
 @Getter
-public class PartyCreateEvent extends CoreEvent implements Cancellable {
+public class PartyCreateEvent extends CoreEvent {
 
     private final IParty party;
     private final ICorePlayer leader;
-    private final long timestamp;
+    private final long timestamp = System.currentTimeMillis();
 
-    private boolean cancelled;
-
-    public PartyCreateEvent(IParty party, ICorePlayer leader, long timestamp) {
+    public PartyCreateEvent(IParty party, ICorePlayer leader) {
         this.party = party;
         this.leader = leader;
-        this.timestamp = timestamp;
-    }
-
-    @Override
-    public boolean isCancelled() {
-        return cancelled;
-    }
-
-    @Override
-    public void setCancelled(boolean b) {
-        this.cancelled = b;
     }
 }

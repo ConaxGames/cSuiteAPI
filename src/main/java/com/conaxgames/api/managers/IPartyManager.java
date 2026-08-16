@@ -6,27 +6,19 @@ import java.util.UUID;
 
 public interface IPartyManager {
 
+    IParty getParty(UUID playerId);
+
     IParty createParty(UUID leader);
 
     void disbandParty(IParty party);
 
-    IParty getParty(UUID playerId);
-
-    boolean isInParty(UUID playerId);
-
-    void addToParty(IParty party, UUID playerId);
-
-    void removeFromParty(UUID playerId);
-
     void sendInvite(UUID inviter, UUID target);
 
-    boolean hasPendingInvite(UUID playerId);
+    void acceptInvite(UUID playerId);
 
     UUID getInviter(UUID playerId);
 
     void removeInvite(UUID playerId);
 
-    void acceptInvite(UUID playerId);
-
-    int getMaxPartySize();
+    void removeFromParty(UUID playerId);
 }
