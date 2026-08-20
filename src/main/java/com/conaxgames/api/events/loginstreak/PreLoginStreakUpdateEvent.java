@@ -1,28 +1,15 @@
 package com.conaxgames.api.events.loginstreak;
 
 import com.conaxgames.api.ICorePlayer;
-import com.conaxgames.api.events.CoreEvent;
+import com.conaxgames.api.events.CoreCancellableEvent;
 import lombok.Getter;
-import org.bukkit.event.Cancellable;
 
 @Getter
-public class PreLoginStreakUpdateEvent extends CoreEvent implements Cancellable {
+public class PreLoginStreakUpdateEvent extends CoreCancellableEvent {
 
     private final ICorePlayer target;
 
-    private boolean cancelled;
-
     public PreLoginStreakUpdateEvent(ICorePlayer target) {
         this.target = target;
-    }
-
-    @Override
-    public boolean isCancelled() {
-        return cancelled;
-    }
-
-    @Override
-    public void setCancelled(boolean b) {
-        this.cancelled = b;
     }
 }
