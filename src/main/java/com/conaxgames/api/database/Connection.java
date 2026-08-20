@@ -172,7 +172,7 @@ public interface Connection {
 
     CompletableFuture<Boolean> onLogout(UUID uuid, Long playTime, HashMap<String, Long> scopedPlaytime, Long lastLogout);
 
-    CompletableFuture<Boolean> setLoginStreak(UUID uuid, int streak, long timestamp);
+    CompletableFuture<Boolean> setLoginStreak(UUID uuid, int streak, int longest, long timestamp);
 
     void loadChatTags(IChatTagManager tagManager);
 
