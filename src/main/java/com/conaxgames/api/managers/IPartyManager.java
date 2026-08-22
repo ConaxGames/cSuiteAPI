@@ -20,5 +20,5 @@ public interface IPartyManager {
 
     void removeInvite(UUID playerId);
 
-    void removeFromParty(UUID playerId);
+    void removeFromParty(UUID playerId, boolean kicked);
 }
