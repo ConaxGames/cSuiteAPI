@@ -6,13 +6,13 @@ import lombok.Getter;
 import org.bukkit.event.Cancellable;
 
 @Getter
-public class PreLoginStreakUpdateEvent extends CoreEvent implements Cancellable {
+public class LoginStreakRewardTriggerEvent extends CoreEvent implements Cancellable {
 
     private final ICorePlayer target;
 
     private boolean cancelled;
 
-    public PreLoginStreakUpdateEvent(ICorePlayer target) {
+    public LoginStreakRewardTriggerEvent(ICorePlayer target) {
         this.target = target;
     }
 
