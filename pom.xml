@@ -6,7 +6,7 @@
 
     <groupId>com.conaxgames</groupId>
     <artifactId>csuite-api</artifactId>
-    <version>dev</version>
+    <version>temp</version>
 
     <name>csuite-api</name>
     <description>A lightweight, high-performance API designed for seamless integration with an all-in-one server core, enabling efficient development for PaperMC servers.</description>
