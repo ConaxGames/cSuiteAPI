@@ -1,5 +1,6 @@
 package com.conaxgames.api.managers;
 
+import com.conaxgames.api.ICorePlayer;
 import com.conaxgames.api.interfaces.IParty;
 
 import java.util.UUID;
@@ -21,4 +22,6 @@ public interface IPartyManager {
     void removeInvite(UUID playerId);
 
     void removeFromParty(UUID playerId, boolean kicked);
+
+    void sendChat(ICorePlayer sender, String message);
 }
