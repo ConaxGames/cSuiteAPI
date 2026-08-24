@@ -109,10 +109,6 @@ public interface ICorePlayer {
 
     void setLoginStreak(int value);
 
-    int getLongestLoginStreak();
-
-    void setLongestLoginStreak(int value);
-
     String getDisplayName();
 
     long getUpdatedPlaytimeLong();
