@@ -26,12 +26,6 @@ public class NetworkConfig {
 
     public List<String> hubServerIdentifiers = Arrays.asList("hub", "lobby");
 
-    public String alreadyOwnChatTagCurrency = "coins";
-    public Integer alreadyOwnChatTagReplacement = 250;
-
-    public String alreadyOwnChatTagColorCurrency = "coins";
-    public Integer alreadyOwnChatTagColorReplacement = 250;
-
     public Integer guildDefaultMemberLimit = 50;
 
     public Boolean tagMentionNamesInChat = false;
