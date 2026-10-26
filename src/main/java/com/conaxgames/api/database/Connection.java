@@ -1,6 +1,5 @@
 package com.conaxgames.api.database;
 
-import com.conaxgames.api.ICorePlayer;
 import com.conaxgames.api.interfaces.IPunishment;
 import com.conaxgames.api.interfaces.IScope;
 import com.conaxgames.api.managers.IChatTagManager;
@@ -12,9 +11,7 @@ import org.bson.conversions.Bson;
 import org.bukkit.command.CommandSender;
 
 import java.lang.reflect.Field;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 
@@ -26,11 +23,7 @@ public interface Connection {
 
     MongoCollection<Document> getProfilesCollection();
 
-    MongoCollection<Document> getChatTagsCollection();
-
     MongoCollection<Document> getPunishmentsCollection();
-
-    MongoCollection<Document> getInvBackupsCollection();
 
     MongoCollection<Document> getGuildsCollection();
 
@@ -42,153 +35,24 @@ public interface Connection {
 
     MongoCollection<Document> getAuditCollection();
 
-    MongoCollection<Document> getNetworkCollection();
-
     MongoCollection<Scope> getScopesCollection();
 
-    CompletableFuture<Boolean> profileAlreadyExists(UUID uuid);
-
-    CompletableFuture<Boolean> profileAlreadyExists(String nameAnyCase);
-
-    CompletableFuture<Boolean> createProfile(Bson filter, UUID uuid, String name);
-
-    CompletableFuture<ICorePlayer> loadProfile(Bson filter, Boolean create, ICorePlayer corePlayer);
-
-    CompletableFuture<Document> getProfileDocument(Bson filter);
+    /**
+     * Applies an update to a player's profile. When the player isn't online on this server,
+     * whichever server holds them is told to reload the profile so its cached copy stays current.
+     */
+    CompletableFuture<Boolean> update(UUID uuid, Bson update);
 
     CompletableFuture<UUID> getUuid(String nameAnyCase);
 
-    CompletableFuture<String> getName(UUID uuid);
-
-    CompletableFuture<Boolean> addGrant(UUID uuid, String grantId, String json);
-
-    CompletableFuture<Boolean> removeGrant(UUID uuid, String grantId);
-
-    CompletableFuture<Boolean> setSocials(UUID uuid, Map<String, String> links);
-
-    CompletableFuture<Boolean> incrementFilterSpam(UUID uuid, Integer amount);
-
-    CompletableFuture<Boolean> incrementFilterToxicity(UUID uuid, Integer amount);
-
-    CompletableFuture<Boolean> setUnlockedChatTags(UUID uuid, String tags);
-
-    CompletableFuture<Boolean> setUnlockedTagColors(UUID uuid, String colors);
-
-    CompletableFuture<Boolean> setUnlockedNameColors(UUID uuid, String colors);
-
-    CompletableFuture<Boolean> unsetActiveChatTag(UUID uuid);
-
-    CompletableFuture<Boolean> setNetworkXP(UUID uuid, Integer amount);
-
-    CompletableFuture<Boolean> addNetworkXP(UUID uuid, Integer amount);
-
-    CompletableFuture<Boolean> setScopedPermissions(UUID uuid, Map<String, Map<String, Long>> perms);
-
-    CompletableFuture<Boolean> setLanguage(UUID uuid, Language language);
-
-    CompletableFuture<Boolean> unsetNickname(UUID uuid);
-
-    CompletableFuture<Boolean> unsetCustomTagColor(UUID uuid);
-
-    CompletableFuture<Boolean> setCustomColor(UUID uuid, String color);
-
-    CompletableFuture<Boolean> unsetCustomColor(UUID uuid);
-
-    CompletableFuture<List<OfflineWarn>> loadOfflineWarnings(UUID uuid);
-
-    CompletableFuture<Boolean> addIgnoring(UUID uuid, String ignoreUuid);
-
-    CompletableFuture<Boolean> removeIgnoring(UUID uuid, String ignoreUuid);
-
-    CompletableFuture<Boolean> addFriend(UUID uuid, String friendUuid);
-
-    CompletableFuture<Boolean> removeFriend(UUID uuid, String friendUuid);
-
-    CompletableFuture<Boolean> setCurrency(UUID uuid, String currency, Integer amount);
-
-    CompletableFuture<Boolean> setMute(UUID uuid, String mute);
-
-    CompletableFuture<Boolean> unsetMute(UUID uuid);
-
-    CompletableFuture<Boolean> setBan(UUID uuid, String mute);
-
-    CompletableFuture<Boolean> unsetBan(UUID uuid);
-
-    CompletableFuture<Boolean> setBlacklist(UUID uuid, String mute);
-
-    CompletableFuture<Boolean> unsetBlacklist(UUID uuid);
-
-    CompletableFuture<Boolean> setIPBan(UUID uuid, String mute);
-
-    CompletableFuture<Boolean> unsetIPBan(UUID uuid);
-
-    CompletableFuture<Boolean> setOfflineWarnings(UUID uuid, String mute);
-
-    CompletableFuture<Boolean> unsetOfflineWarnings(UUID uuid);
-
-    CompletableFuture<Boolean> setVanished(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> setStaffMode(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> setStaffSnapshot(UUID uuid, String base64);
-
-    CompletableFuture<Boolean> unsetStaffSnapshot(UUID uuid);
-
-    CompletableFuture<Boolean> setGlobalChatToggle(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> setPrivateMessageToggle(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> setStaffMessagesToggle(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> setUsernamesToggle(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> setSoundsToggle(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> setAutoBroadcastsToggle(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> setAutoBroadcastSoundsToggle(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> setAcceptingPaymentsToggle(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> setAcceptingTeleportsToggle(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> setSocialSpyToggle(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> setGlowToggle(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> setToggle(UUID uuid, String toggle, Boolean value);
-
-    CompletableFuture<Boolean> setNickname(UUID uuid, String name);
-
-    CompletableFuture<Boolean> setElement(UUID uuid, Boolean value);
-
-    CompletableFuture<Boolean> unsetElement(UUID uuid);
-
-    CompletableFuture<Boolean> setWorldTime(UUID uuid, String time);
-
-    CompletableFuture<Boolean> setFrozen(UUID uuid, Boolean frozen);
-
-    CompletableFuture<Boolean> onLogin(UUID uuid, String ipAddress, String lastAndCurrentServer, Long lastLogin);
-
-    CompletableFuture<Boolean> onLogout(UUID uuid, Long playTime, HashMap<String, Long> scopedPlaytime, Long lastLogout);
-
-    CompletableFuture<Boolean> setLoginStreak(UUID uuid, int streak, int longest, long timestamp);
-
+    /**
+     * Loads every chat tag into the manager, seeding the defaults first when none exist.
+     */
     void loadChatTags(IChatTagManager tagManager);
-
-    CompletableFuture<Boolean> createDefaultTags(IChatTagManager tagManager);
-
-    void setActiveChatTag(UUID uuid, String tagName);
-
-    void setCustomTagColor(UUID uuid, String tagColor);
 
     void createChatTag(Document document);
 
     CompletableFuture<Boolean> deleteChatTag(Bson filter);
-
-    CompletableFuture<Document> getChatTag(String name);
-
-    CompletableFuture<Boolean> chatTagAlreadyExists(String name);
 
     CompletableFuture<Boolean> updateChatTag(Bson filter, Bson update);
 
@@ -197,8 +61,6 @@ public interface Connection {
     CompletableFuture<Boolean> deleteScope(Bson filter);
 
     CompletableFuture<IScope> getScope(String id);
-
-    CompletableFuture<Boolean> scopeAlreadyExists(String id);
 
     CompletableFuture<List<IPunishment>> loadPunishments(UUID uuid);
 

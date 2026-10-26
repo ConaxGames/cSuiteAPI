@@ -75,8 +75,6 @@ public interface ICorePlayer {
 
     boolean isPrivateMessageSounds();
 
-    boolean isDataLoaded();
-
     boolean isVanished();
 
     boolean isStaffMode();

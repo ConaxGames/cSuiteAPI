@@ -9,8 +9,4 @@ public class OfflineWarn {
 
     public final String creator;
     public final String reason;
-
-    public String getSerialized() {
-        return creator + "`" + reason;
-    }
 }

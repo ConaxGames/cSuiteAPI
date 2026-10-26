@@ -20,16 +20,30 @@ public abstract class CoreEvent extends Event {
         return handlers;
     }
 
+    protected CoreEvent() {
+    }
+
+    /**
+     * @param async true for an event that runs on the thread firing it instead of the main thread
+     */
+    protected CoreEvent(boolean async) {
+        super(async);
+    }
+
+    /**
+     * Fires the event and returns whether it was cancelled. Async events run where they are fired, any other event
+     * fired off the main thread is handed to it.
+     */
     public boolean call() {
         if (!CorePluginAPI.isRegistered()) {
             throw new IllegalStateException("CorePluginAPI is not registered. Event cannot be called.");
         }
-        Plugin bukkitPlugin = CorePluginAPI.getPlugin().getPlugin();
-        if (Bukkit.isPrimaryThread()) {
-            Bukkit.getServer().getPluginManager().callEvent(this);
+        if (this.isAsynchronous() || Bukkit.isPrimaryThread()) {
+            Bukkit.getPluginManager().callEvent(this);
         } else {
+            Plugin bukkitPlugin = CorePluginAPI.getPlugin().getPlugin();
             CorePluginAPI.getScheduler().runTask(bukkitPlugin, () -> Bukkit.getPluginManager().callEvent(this));
         }
-        return this instanceof Cancellable && ((Cancellable) this).isCancelled();
+        return this instanceof Cancellable cancellable && cancellable.isCancelled();
     }
 }

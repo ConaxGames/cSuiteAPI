@@ -16,6 +16,7 @@ public enum MessageType implements MessageTypeInterface {
     KICK_IP,
     EXECUTE_COMMAND,
     RELOAD_NETWORK_CONFIG,
+    PROFILE_RELOAD,
 
     SCOPE_CREATE,
     SCOPE_DELETE,

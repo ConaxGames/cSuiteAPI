@@ -1,13 +1,12 @@
 package com.conaxgames.api.events.guilds;
 
 import com.conaxgames.api.ICorePlayer;
-import com.conaxgames.api.events.CoreEvent;
+import com.conaxgames.api.events.CoreCancellableEvent;
 import com.conaxgames.api.interfaces.IGuild;
 import lombok.Getter;
-import org.bukkit.event.Cancellable;
 
 @Getter
-public class GuildMemberKickEvent extends CoreEvent implements Cancellable {
+public class GuildMemberKickEvent extends CoreCancellableEvent {
 
     private final IGuild guild;
     private final ICorePlayer leader;
@@ -15,23 +14,11 @@ public class GuildMemberKickEvent extends CoreEvent implements Cancellable {
     private final String reason;
     private final long timestamp;
 
-    private boolean cancelled;
-
     public GuildMemberKickEvent(IGuild guild, ICorePlayer leader, String kicked, String reason, long timestamp) {
         this.guild = guild;
         this.leader = leader;
         this.kicked = kicked;
         this.reason = reason;
         this.timestamp = timestamp;
-    }
-
-    @Override
-    public boolean isCancelled() {
-        return cancelled;
-    }
-
-    @Override
-    public void setCancelled(boolean b) {
-        this.cancelled = b;
     }
 }

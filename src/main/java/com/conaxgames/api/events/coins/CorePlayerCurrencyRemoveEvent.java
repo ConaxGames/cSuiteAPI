@@ -1,34 +1,22 @@
 package com.conaxgames.api.events.coins;
 
 import com.conaxgames.api.ICorePlayer;
-import com.conaxgames.api.events.CoreEvent;
+import com.conaxgames.api.events.CoreCancellableEvent;
 import lombok.Getter;
-import org.bukkit.event.Cancellable;
 
 @Getter
-public class CorePlayerCurrencyRemoveEvent extends CoreEvent implements Cancellable {
+public class CorePlayerCurrencyRemoveEvent extends CoreCancellableEvent {
 
     private final ICorePlayer corePlayer;
     private final String currency;
     private final String reason;
     private int amount;
-    private boolean cancelled;
 
     public CorePlayerCurrencyRemoveEvent(ICorePlayer corePlayer, String currency, int amount, String reason) {
         this.corePlayer = corePlayer;
         this.currency = currency;
         this.amount = amount;
         this.reason = reason;
-    }
-
-    @Override
-    public boolean isCancelled() {
-        return cancelled;
-    }
-
-    @Override
-    public void setCancelled(boolean b) {
-        this.cancelled = b;
     }
 
     public void setAmount(int amount) {
