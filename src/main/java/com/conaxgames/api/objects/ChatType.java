@@ -4,7 +4,6 @@ public enum ChatType {
 
     NORMAL,
     STAFF,
-    DEV,
     GUILD,
     PARTY,
 
