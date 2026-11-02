@@ -63,8 +63,6 @@ public interface ICorePlayer {
 
     boolean isWaitingToBack();
 
-    boolean isWaitingToTPAHere();
-
     boolean isSeePrivateMessages();
 
     boolean isSeeStaffMessages();
@@ -92,6 +90,8 @@ public interface ICorePlayer {
     boolean isOnline();
 
     Set<String> getFriends();
+
+    boolean isIgnoring(UUID uuid);
 
     void sendMessage(String message);
 
