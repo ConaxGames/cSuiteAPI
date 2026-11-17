@@ -7,8 +7,6 @@ import java.util.List;
 
 public interface ICoreLog {
 
-    void announceCorePluginBanner(ICorePlayer target);
-
     void announceGrantCreation(IGrant grant);
 
     void announceGrantDeletion(IGrant grant);
