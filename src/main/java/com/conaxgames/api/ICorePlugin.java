@@ -31,8 +31,6 @@ public interface ICorePlugin {
 
     IServerManager getServerManager();
 
-    ISoundManager getSoundManager();
-
     IRankManager getRankManager();
 
     IGuildManager getGuildManager();
