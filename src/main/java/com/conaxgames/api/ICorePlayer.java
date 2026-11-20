@@ -27,9 +27,14 @@ public interface ICorePlayer {
     String getRankPrefix();
 
     /**
-     * Sets and persists the prefix shown while the player holds the given rank, a null prefix clears it.
+     * The colour of the player's name: the one picked with their rank prefix, otherwise the rank's own.
      */
-    void selectRankPrefix(String rankId, String prefix);
+    String getRankColor();
+
+    /**
+     * Sets and persists the prefix and name colour shown while the player holds the given rank, a null prefix clears both.
+     */
+    void selectRankPrefix(String rankId, String prefix, String color);
 
     IDeserialisedPunishment getBlacklistPunishment();
 
