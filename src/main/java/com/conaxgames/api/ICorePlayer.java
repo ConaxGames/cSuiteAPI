@@ -32,7 +32,7 @@ public interface ICorePlayer {
     String getRankColor();
 
     /**
-     * Sets and persists the prefix and name colour shown while the player holds the given rank, a null prefix clears both.
+     * Sets and persists the prefix and name colour shown while the player holds the given rank, a null rank id clears them.
      */
     void selectRankPrefix(String rankId, String prefix, String color);
 
