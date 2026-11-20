@@ -18,7 +18,6 @@ public interface IChatTag {
 
     boolean isSuffix();
 
-    boolean isPrivate();
 
     boolean hasPermission(ICorePlayer corePlayer);
 

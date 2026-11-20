@@ -9,7 +9,6 @@ public interface IChatTagColor {
 
     String getDisplay();
 
-    String getColorCC();
 
     String getPermission();
 

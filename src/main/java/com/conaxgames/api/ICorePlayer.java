@@ -21,7 +21,15 @@ public interface ICorePlayer {
 
     IRank getEffectiveRank();
 
-    boolean isBlacklisted();
+    /**
+     * The prefix shown for the player's effective rank: the one they picked for it, otherwise the rank's own.
+     */
+    String getRankPrefix();
+
+    /**
+     * Sets and persists the prefix shown while the player holds the given rank, a null prefix clears it.
+     */
+    void selectRankPrefix(String rankId, String prefix);
 
     IDeserialisedPunishment getBlacklistPunishment();
 
@@ -138,8 +146,6 @@ public interface ICorePlayer {
     void removeCurrency(String currency, int amount, String reason, boolean message);
 
     boolean canAfford(String currency, int amount);
-
-    boolean isInventoryEmpty();
 
     IGuildMember getGuildMember();
 
